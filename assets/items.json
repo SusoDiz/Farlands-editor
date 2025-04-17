@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Hacha",
+      "image": "items/",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "name": "Azada",
+      "image": "items/",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "name": "Pico",
+      "image": "items/",
+      "description": ""
+    }
+  ]
+}

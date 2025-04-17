@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Guardado - Farlands</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🪐 Editor de Partidas - Farlands</h1>
+            <p>Sube y edita tus archivos de guardado del juego</p>
+            <button id="theme-toggle" class="theme-toggle" title="Cambiar entre modo claro y oscuro">
+                <span class="toggle-icon">🌓</span>
+            </button>
+        </header>
+        
+        <section class="upload-section">
+            <div class="file-upload">
+                <h2>Subir archivo de guardado</h2>
+                <div class="upload-area" id="drop-area">
+                    <p>Arrastra y suelta tu archivo gamedata.dat aquí o</p>
+                    <label for="file-input" class="file-label">Seleccionar archivo</label>
+                    <input type="file" id="file-input" accept=".dat" hidden>
+                </div>
+                <div class="file-info" id="file-info">
+                    No se ha seleccionado ningún archivo
+                </div>
+            </div>
+        </section>
+
+        <section class="slot-selection-section" id="slot-selection">
+            <h2>Seleccionar partida</h2>
+            <p>El archivo contiene múltiples partidas guardadas. Selecciona la que deseas editar:</p>
+            
+            <div class="slots-container" id="slots-container">
+                <!-- Los slots se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+
+        <section class="edit-section" id="edit-section">
+            <h2>Editar partida <span id="current-slot-indicator"></span></h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="general">General</button>
+                <button class="tab-btn" data-tab="inventory">Inventario</button>
+                <button class="tab-btn" data-tab="farm">Granja</button>
+                <button class="tab-btn" data-tab="skills">Habilidades</button>
+                <button class="tab-btn" data-tab="ship">Nave espacial</button>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-pane active" id="general">
+                    <div class="form-group">
+                        <label for="playerName">Nombre del jugador</label>
+                        <input type="text" id="playerName" placeholder="Nombre del jugador">
+                    </div>
+                    <div class="form-group">
+                        <label for="farmName">Nombre de la granja</label>
+                        <input type="text" id="farmName" placeholder="Nombre de la granja">
+                    </div>
+                    <div class="form-group">
+                        <label for="credits">Créditos</label>
+                        <input type="number" id="credits" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="energy">Nivel de Energía</label>
+                        <input type="number" id="energy" min="1" max="10">
+                    </div>
+                    <div class="form-group">
+                        <label for="level">Nivel del jugador</label>
+                        <input type="number" id="level" min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="day">Día actual</label>
+                        <input type="number" id="day" min="1" max="30">
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Año actual</label>
+                        <input type="number" id="year" min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="season">Clima</label>
+                        <select id="season">
+                            <option value="1">Clima Templado</option>
+                            <option value="2">Clima Cálido</option>
+                            <option value="3">Clima Frío</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="inventory">
+                    <p>Esta sección te permitirá editar tu inventario.</p>
+                    <div id="inventory-items" class="inventory-grid">
+                        <!-- El inventario se cargará dinámicamente aquí -->
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="farm">
+                    <p>Esta sección te permitirá editar tu granja.</p>
+                    <!-- Los datos de la granja se cargarán dinámicamente aquí -->
+                </div>
+                
+                <div class="tab-pane" id="skills">
+                    <h3>Herramientas</h3>
+                    <div class="form-group">
+                        <label for="hatchetLevel">Nivel de hacha</label>
+                        <input type="number" id="hatchetLevel" min="0" max="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="pickaxeLevel">Nivel de pico</label>
+                        <input type="number" id="pickaxeLevel" min="0" max="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="sickleLevel">Nivel de hoz</label>
+                        <input type="number" id="sickleLevel" min="0" max="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="hoeLevel">Nivel de azada</label>
+                        <input type="number" id="hoeLevel" min="0" max="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="wateringCanLevel">Nivel de regadera</label>
+                        <input type="number" id="wateringCanLevel" min="0" max="5">
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="ship">
+                    <h3>Nave espacial</h3>
+                    <div class="form-group">
+                        <label for="shipEnergy">Energía de la nave</label>
+                        <input type="number" id="shipEnergy" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="shipCells">Celdas disponibles</label>
+                        <input type="number" id="shipCells" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="shipActiveCells">Celdas activas</label>
+                        <input type="number" id="shipActiveCells" min="0">
+                    </div>
+                    
+                    <h3>Partes de la nave</h3>
+                    <div id="ship-parts">
+                        <!-- Las partes de la nave se cargarán dinámicamente aquí -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="save-btn" class="primary-btn">Guardar cambios</button>
+                <button id="download-btn" class="secondary-btn">Descargar archivo modificado</button>
+            </div>
+        </section>
+        
+        <div class="notification" id="notification">
+            <p id="notification-message"></p>
+            <span class="close-notification">&times;</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>Esta aplicación es un editor no oficial para archivos de guardado de Farlands. Recuerda hacer copias de seguridad de tus archivos antes de editarlos.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
