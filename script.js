@@ -167,8 +167,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Eventos para los botones de acción
-    saveBtn.addEventListener('click', saveChanges);
-    downloadBtn.addEventListener('click', downloadModifiedFile);
+    saveBtn.addEventListener('click', () => {
+        saveChanges();
+        showNotification('Cambios guardados antes de descargar', 'info');
+    });
+
+    downloadBtn.addEventListener('click', () => {
+        saveChanges();
+        downloadModifiedFile();
+    });
     
     // Evento para cerrar notificaciones
     closeNotification.addEventListener('click', () => {
@@ -355,9 +362,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const climaInfo = document.createElement('div');
                 climaInfo.className = 'slot-info';
                 // Corregir la visualización del clima
-                const climas = ['Templado', 'Cálido', 'Frío'];
+                const climas = ['Frío', 'Templado', 'Cálido'];
                 const climaIndex = (slot.currentSeason >= 0 && slot.currentSeason < climas.length) ? slot.currentSeason : 0;
-                climaInfo.innerHTML = `<span>Clima:</span> ${climas[climaIndex - 1]}`;
+                climaInfo.innerHTML = `<span>Clima:</span> ${climas[climaIndex]}`;
                 slotCard.appendChild(climaInfo);
                 
                 // Botón para seleccionar esta partida
