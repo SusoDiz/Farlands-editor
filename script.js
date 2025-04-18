@@ -19,6 +19,44 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;
     
+    // Función para validar todos los campos numéricos
+    function validateNumericInput(input) {
+        if (!input) return;
+        
+        const min = parseInt(input.min);
+        const max = parseInt(input.max);
+        let value = parseInt(input.value) || 0;
+        
+        // Si el valor está fuera de los límites, ajustarlo
+        if (!isNaN(min) && value < min) {
+            value = min;
+            input.value = value;
+            showNotification(`El valor de ${input.previousElementSibling?.textContent || 'campo'} ha sido ajustado al mínimo (${min})`, 'warning');
+        }
+        
+        if (!isNaN(max) && value > max) {
+            value = max;
+            input.value = value;
+            showNotification(`El valor de ${input.previousElementSibling?.textContent || 'campo'} ha sido ajustado al máximo (${max})`, 'warning');
+        }
+        
+        return value;
+    }
+    
+    // Aplicar validación a todos los inputs numéricos
+    function setupNumericValidation() {
+        const numericInputs = document.querySelectorAll('input[type="number"]');
+        numericInputs.forEach(input => {
+            input.addEventListener('change', function() {
+                validateNumericInput(this);
+            });
+            
+            input.addEventListener('blur', function() {
+                validateNumericInput(this);
+            });
+        });
+    }
+    
     // Comprobar si hay preferencia guardada en localStorage
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
@@ -46,6 +84,40 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         updateThemeToggleIcon(!isDarkMode);
     });
+    
+    // Añadir validación para el combustible de la nave
+    const shipCells = document.getElementById('shipCells');
+    const shipActiveCells = document.getElementById('shipActiveCells');
+    
+    // Validar cuando cambie el combustible total
+    if (shipCells) {
+        shipCells.addEventListener('change', function() {
+            validateShipFuel();
+        });
+    }
+    
+    // Validar cuando cambie el combustible actual
+    if (shipActiveCells) {
+        shipActiveCells.addEventListener('change', function() {
+            validateShipFuel();
+        });
+    }
+    
+    // Función para validar que el combustible actual no sea mayor que el total
+    function validateShipFuel() {
+        const totalFuel = parseInt(shipCells.value) || 2;
+        let currentFuel = parseInt(shipActiveCells.value) || 0;
+        
+        // Si el combustible actual es mayor que el total, ajustarlo
+        if (currentFuel > totalFuel) {
+            currentFuel = totalFuel;
+            shipActiveCells.value = currentFuel;
+            showNotification('Combustible actual ajustado para no exceder el máximo', 'warning');
+        }
+        
+        // Actualizar el valor máximo del combustible actual
+        shipActiveCells.max = totalFuel;
+    }
     
     function updateThemeToggleIcon(isDarkMode) {
         const iconElement = themeToggle.querySelector('.toggle-icon');
@@ -382,30 +454,44 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('shipCells').value = slotData.spaceShipAvailableCells || 0;
         document.getElementById('shipActiveCells').value = slotData.spaceShipActiveCells || 0;
         
-        // Cargar partes de la nave espacial
-        const shipPartsContainer = document.getElementById('ship-parts');
-        shipPartsContainer.innerHTML = '';
-        
+        // Cargar los valores de las partes de la nave en los nuevos selects
         if (slotData.shipParts && slotData.shipParts.length > 0) {
-            slotData.shipParts.forEach((part, index) => {
-                const partDiv = document.createElement('div');
-                partDiv.className = 'form-group';
-                
-                const label = document.createElement('label');
-                label.htmlFor = `ship-part-${index}`;
-                label.textContent = `Parte ${index + 1}`;
-                
-                const input = document.createElement('input');
-                input.type = 'number';
-                input.id = `ship-part-${index}`;
-                input.min = 0;
-                input.value = part.currentProgress || 0;
-                
-                partDiv.appendChild(label);
-                partDiv.appendChild(input);
-                shipPartsContainer.appendChild(partDiv);
+            // Mapeamos los índices de las partes de la nave a los IDs de los selects
+            const partsMapping = [
+                { index: 0, id: 'ship-cells' },         // Células de combustible
+                { index: 1, id: 'ship-engine' },        // Mejora del motor
+                { index: 2, id: 'ship-cargo' },         // Espacio de bahía de carga
+                { index: 3, id: 'ship-reactors' },      // Mejora reactores
+                { index: 4, id: 'ship-processor' },     // Mejora procesador de materia
+                { index: 5, id: 'ship-hull' }           // Refuerzo del casco
+            ];
+            
+            // Configuramos cada select con el valor correspondiente
+            partsMapping.forEach(mapping => {
+                if (slotData.shipParts[mapping.index]) {
+                    const select = document.getElementById(mapping.id);
+                    if (select) {
+                        const value = slotData.shipParts[mapping.index].currentProgress || 0;
+                        select.value = value.toString();
+                        
+                        // Asegurarnos de que la opción visual corresponda al valor seleccionado
+                        for (let i = 0; i < select.options.length; i++) {
+                            const option = select.options[i];
+                            option.selected = (option.value === value.toString());
+                        }
+                    }
+                }
             });
         }
+        
+        // Validar todos los campos numéricos después de cargar los datos
+        const numericInputs = document.querySelectorAll('input[type="number"]');
+        numericInputs.forEach(input => {
+            validateNumericInput(input);
+        });
+        
+        // Validar específicamente el combustible de la nave
+        validateShipFuel();
         
         // Cargar inventario
         loadInventory(slotData);
@@ -543,6 +629,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         try {
+            // Validar todos los campos numéricos antes de guardar
+            const numericInputs = document.querySelectorAll('input[type="number"]');
+            numericInputs.forEach(input => {
+                validateNumericInput(input);
+            });
+            
+            // Validar específicamente el combustible de la nave
+            validateShipFuel();
+            
             // Obtener los datos del slot actual
             const slotData = gameData.gameData.slotData[currentSlot];
             
@@ -571,12 +666,25 @@ document.addEventListener('DOMContentLoaded', function() {
             slotData.spaceShipAvailableCells = parseInt(document.getElementById('shipCells').value) || 0;
             slotData.spaceShipActiveCells = parseInt(document.getElementById('shipActiveCells').value) || 0;
             
-            // Actualizar partes de la nave espacial
+            // Actualizar partes de la nave espacial desde los nuevos selects
             if (slotData.shipParts && slotData.shipParts.length > 0) {
-                slotData.shipParts.forEach((part, index) => {
-                    const input = document.getElementById(`ship-part-${index}`);
-                    if (input) {
-                        part.currentProgress = parseInt(input.value) || 0;
+                // Mapeamos los índices de las partes de la nave a los IDs de los selects
+                const partsMapping = [
+                    { index: 0, id: 'ship-cells' },         // Células de combustible
+                    { index: 1, id: 'ship-engine' },        // Mejora del motor
+                    { index: 2, id: 'ship-cargo' },         // Espacio de bahía de carga
+                    { index: 3, id: 'ship-reactors' },      // Mejora reactores
+                    { index: 4, id: 'ship-processor' },     // Mejora procesador de materia
+                    { index: 5, id: 'ship-hull' }           // Refuerzo del casco
+                ];
+                
+                // Guardar los valores seleccionados en cada parte
+                partsMapping.forEach(mapping => {
+                    if (slotData.shipParts[mapping.index]) {
+                        const select = document.getElementById(mapping.id);
+                        if (select) {
+                            slotData.shipParts[mapping.index].currentProgress = parseInt(select.value) || 0;
+                        }
                     }
                 });
             }
@@ -647,4 +755,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return (bytes / 1048576).toFixed(2) + ' MB';
         }
     }
+
+    // Configurar validación numérica
+    setupNumericValidation();
 });

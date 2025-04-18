@@ -130,20 +130,77 @@
                 <div class="tab-pane" id="ship">
                     <h3>Nave espacial</h3>
                     <div class="form-group">
-                        <label for="shipEnergy">Energía de la nave</label>
-                        <input type="number" id="shipEnergy" min="0">
+                        <label for="shipEnergy">Materiales procesados</label>
+                        <input type="number" id="shipEnergy" min="0" max="100">
                     </div>
                     <div class="form-group">
-                        <label for="shipCells">Celdas disponibles</label>
-                        <input type="number" id="shipCells" min="0">
+                        <label for="shipCells">Combustible total</label>
+                        <input type="number" id="shipCells" min="2" max="10">
                     </div>
                     <div class="form-group">
-                        <label for="shipActiveCells">Celdas activas</label>
-                        <input type="number" id="shipActiveCells" min="0">
+                        <label for="shipActiveCells">Combustible actual</label>
+                        <input type="number" id="shipActiveCells" min="0" max="10">
                     </div>
                     
-                    <h3>Partes de la nave</h3>
-                    <div id="ship-parts">
+                    <h3>Mejoras de la nave</h3>
+                    <div class="form-group">
+                        <label for="ship-cells">Células de combustible</label>
+                        <select id="ship-cells">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ship-engine">Motor</label>
+                        <select id="ship-engine">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ship-cargo">Espacio de la bahía de carga</label>
+                        <select id="ship-cargo">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ship-reactors">Reactores</label>
+                        <select id="ship-reactors">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ship-processor">Procesador de materia</label>
+                        <select id="ship-processor">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ship-hull">Refuerzo del casco</label>
+                        <select id="ship-hull">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div id="ship-parts" style="display: none;">
                         <!-- Las partes de la nave se cargarán dinámicamente aquí -->
                     </div>
                 </div>
