@@ -323,6 +323,168 @@
       "name": "Lumidotita",
       "image": "items/item-54.png",
       "description": ""
+    },
+    {
+      "id": 55,
+      "name": "Celestio",
+      "image": "items/item-55.png",
+      "description": ""
+    },
+    {
+      "id": 56,
+      "name": "Lengualga",
+      "image": "items/item-56.png",
+      "description": ""
+    },
+    {
+      "id": 57,
+      "name": "Rogoluz",
+      "image": "items/item-57.png",
+      "description": ""
+    },
+    {
+      "id": 58,
+      "name": "Pargo peludo",
+      "image": "items/item-58.png",
+      "description": ""
+    },
+    {
+      "id": 59,
+      "name": "Pez pato",
+      "image": "items/item-59.png",
+      "description": ""
+    },
+    {
+      "id": 60,
+      "name": "Medusa linterna",
+      "image": "items/item-60.png",
+      "description": ""
+    },
+    {
+      "id": 61,
+      "name": "Clisea",
+      "image": "items/item-61.png",
+      "description": ""
+    },
+    {
+      "id": 62,
+      "name": "Caracol de mar",
+      "image": "items/item-62.png",
+      "description": ""
+    },
+    {
+      "id": 63,
+      "name": "Unibi",
+      "image": "items/item-63.png",
+      "description": ""
+    },
+    {
+      "id": 64,
+      "name": "Tilipio",
+      "image": "items/item-64.png",
+      "description": ""
+    },
+    {
+      "id": 65,
+      "name": "Trucha troyana",
+      "image": "items/item-65.png",
+      "description": ""
+    },
+    {
+      "id": 66,
+      "name": "Carpín manguito",
+      "image": "items/item-66.png",
+      "description": ""
+    },
+    {
+      "id": 67,
+      "name": "Caballito magmático",
+      "image": "items/item-67.png",
+      "description": ""
+    },
+    {
+      "id": 68,
+      "name": "Sardina voladora",
+      "image": "items/item-68.png",
+      "description": ""
+    },
+    {
+      "id": 69,
+      "name": "Tiburón caña",
+      "image": "items/item-69.png",
+      "description": ""
+    },
+    {
+      "id": 70,
+      "name": "Pulpunk",
+      "image": "items/item-70.png",
+      "description": ""
+    },
+    {
+      "id": 71,
+      "name": "Tiburón de obsidiana",
+      "image": "items/item-71.png",
+      "description": ""
+    },
+    {
+      "id": 72,
+      "name": "Magmamar",
+      "image": "items/item-72.png",
+      "description": ""
+    },
+    {
+      "id": 73,
+      "name": "Glaciablob",
+      "image": "items/item-73.png",
+      "description": ""
+    },
+    {
+      "id": 74,
+      "name": "Geodautilo",
+      "image": "items/item-74.png",
+      "description": ""
+    },
+    {
+      "id": 75,
+      "name": "Alguila",
+      "image": "items/item-75.png",
+      "description": ""
+    },
+    {
+      "id": 76,
+      "name": "Pez aleta de gancho",
+      "image": "items/item-76.png",
+      "description": ""
+    },
+    {
+      "id": 77,
+      "name": "Skupo",
+      "image": "items/item-77.png",
+      "description": ""
+    },
+    {
+      "id": 78,
+      "name": "Cristarma",
+      "image": "items/item-78.png",
+      "description": ""
+    },
+    {
+      "id": 79,
+      "name": "Butanco",
+      "image": "items/item-79.png",
+      "description": ""
+    },
+    {
+      "id": 80,
+      "name": "Opabinia",
+      "image": "items/item-80.png",
+      "description": ""
+    },
+    {
+      "id": 81,
+      "name": "Esturión erizo",
+      "image": "items/item-81.png",
+      "description": ""
     }
   ]
 }
