@@ -554,6 +554,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     itemName.textContent = `Slot ${index + 1}`;
                 }
                 
+                // Crear contenedor para el input de ID
+                const idContainer = document.createElement('div');
+                idContainer.className = 'input-container';
+                
+                // Crear etiqueta para el ID
+                const idLabel = document.createElement('label');
+                idLabel.textContent = 'ID:';
+                idLabel.className = 'input-label';
+                idContainer.appendChild(idLabel);
+                
                 // Crear campo para ID del elemento
                 const itemIdInput = document.createElement('input');
                 itemIdInput.type = 'number';
@@ -564,6 +574,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 itemIdInput.dataset.index = index;
                 itemIdInput.dataset.property = 'itemID';
                 itemIdInput.addEventListener('change', updateInventoryItem);
+                idContainer.appendChild(itemIdInput);
+                
+                // Crear contenedor para el input de cantidad
+                const amountContainer = document.createElement('div');
+                amountContainer.className = 'input-container';
+                
+                // Crear etiqueta para la cantidad
+                const amountLabel = document.createElement('label');
+                amountLabel.textContent = 'Cantidad:';
+                amountLabel.className = 'input-label';
+                amountContainer.appendChild(amountLabel);
                 
                 // Crear campo para cantidad
                 const itemAmountInput = document.createElement('input');
@@ -575,12 +596,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 itemAmountInput.dataset.index = index;
                 itemAmountInput.dataset.property = 'amount';
                 itemAmountInput.addEventListener('change', updateInventoryItem);
+                amountContainer.appendChild(itemAmountInput);
                 
                 // Agregar todo al elemento de inventario
                 itemDiv.appendChild(itemIcon);
                 itemDiv.appendChild(itemName);
-                itemDiv.appendChild(itemIdInput);
-                itemDiv.appendChild(itemAmountInput);
+                itemDiv.appendChild(idContainer);
+                itemDiv.appendChild(amountContainer);
                 
                 inventoryContainer.appendChild(itemDiv);
             });

@@ -3,19 +3,163 @@
     {
       "id": 1,
       "name": "Hacha",
-      "image": "items/",
+      "image": "items/item-1.png",
       "description": ""
     },
     {
       "id": 2,
       "name": "Azada",
-      "image": "items/",
+      "image": "items/item-2.png",
       "description": ""
     },
     {
       "id": 3,
       "name": "Pico",
-      "image": "items/",
+      "image": "items/item-3.png",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "name": "Hoz",
+      "image": "items/item-4.png",
+      "description": ""
+    },
+    {
+      "id": 5,
+      "name": "Caña de Pescar",
+      "image": "items/item-5.png",
+      "description": ""
+    },
+    {
+      "id": 6,
+      "name": "Red",
+      "image": "items/item-6.png",
+      "description": ""
+    },
+    {
+      "id": 7,
+      "name": "Madera",
+      "image": "items/item-7.png",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "name": "Hierba",
+      "image": "items/item-8.png",
+      "description": ""
+    },
+    {
+      "id": 9,
+      "name": "Savia",
+      "image": "items/item-9.png",
+      "description": ""
+    },
+    {
+      "id": 10,
+      "name": "Piedra",
+      "image": "items/item-10.png",
+      "description": ""
+    },
+    {
+      "id": 11,
+      "name": "Geoda",
+      "image": "items/item-11.png",
+      "description": ""
+    },
+    {
+      "id": 12,
+      "name": "Carbón",
+      "image": "items/item-12.png",
+      "description": ""
+    },
+    {
+      "id": 13,
+      "name": "Turba",
+      "image": "items/item-13.png",
+      "description": ""
+    },
+    {
+      "id": 14,
+      "name": "Piña",
+      "image": "items/item-14.png",
+      "description": ""
+    },
+    {
+      "id": 15,
+      "name": "Semilla de fruta temporal",
+      "image": "items/item-15.png",
+      "description": ""
+    },
+    {
+      "id": 16,
+      "name": "Fruto temporal",
+      "image": "items/item-16.png",
+      "description": ""
+    },
+    {
+      "id": 17,
+      "name": "Semillas variadas",
+      "image": "items/item-17.png",
+      "description": ""
+    },
+    {
+      "id": 18,
+      "name": "Cobre",
+      "image": "items/item-18.png",
+      "description": ""
+    },
+    {
+      "id": 19,
+      "name": "Plata",
+      "image": "items/item-19.png",
+      "description": ""
+    },
+    {
+      "id": 20,
+      "name": "Chatarra",
+      "image": "items/item-20.png",
+      "description": ""
+    },
+    {
+      "id": 21,
+      "name": "Pieza de recambio",
+      "image": "items/item-21.png",
+      "description": ""
+    },
+    {
+      "id": 22,
+      "name": "Regadera",
+      "image": "items/item-22.png",
+      "description": ""
+    },
+    {
+      "id": 23,
+      "name": "Semillas de cactus",
+      "image": "items/item-23.png",
+      "description": ""
+    },
+    {
+      "id": 24,
+      "name": "Semillas de azafrán bumerang",
+      "image": "items/item-24.png",
+      "description": ""
+    },
+    {
+      "id": 25,
+      "name": "Semillas de queso vegano",
+      "image": "items/item-25.png",
+      "description": ""
+    },
+    {
+      "id": 26,
+      "name": "Semillas de limo",
+      "image": "items/item-26.png",
+      "description": ""
+    },
+    {
+      "id": 27,
+      "name": "Flor de cactus",
+      "image": "items/item-27.png",
       "description": ""
     }
   ]
