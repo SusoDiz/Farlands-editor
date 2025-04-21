@@ -161,6 +161,168 @@
       "name": "Flor de cactus",
       "image": "items/item-27.png",
       "description": ""
+    },
+    {
+      "id": 28,
+      "name": "Azafrán boomerang",
+      "image": "items/item-28.png",
+      "description": ""
+    },
+    {
+      "id": 29,
+      "name": "Queso vegano",
+      "image": "items/item-29.png",
+      "description": ""
+    },
+    {
+      "id": 30,
+      "name": "Fruto slime",
+      "image": "items/item-30.png",
+      "description": ""
+    },
+    {
+      "id": 31,
+      "name": "Seta bohriana",
+      "image": "items/item-31.png",
+      "description": ""
+    },
+    {
+      "id": 32,
+      "name": "Rosa de Terbin",
+      "image": "items/item-32.png",
+      "description": ""
+    },
+    {
+      "id": 33,
+      "name": "Zafiro",
+      "image": "items/item-33.png",
+      "description": ""
+    },
+    {
+      "id": 34,
+      "name": "Rubí",
+      "image": "items/item-34.png",
+      "description": ""
+    },
+    {
+      "id": 35,
+      "name": "Citrino",
+      "image": "items/item-35.png",
+      "description": ""
+    },
+    {
+      "id": 36,
+      "name": "Circón",
+      "image": "items/item-36.png",
+      "description": ""
+    },
+    {
+      "id": 37,
+      "name": "Sugilita",
+      "image": "items/item-37.png",
+      "description": ""
+    },
+    {
+      "id": 38,
+      "name": "Esmeralda",
+      "image": "items/item-38.png",
+      "description": ""
+    },
+    {
+      "id": 39,
+      "name": "Pelusa de murlusa",
+      "image": "items/item-39.png",
+      "description": ""
+    },
+    {
+      "id": 40,
+      "name": "Cristalinita",
+      "image": "items/item-40.png",
+      "description": ""
+    },
+    {
+      "id": 41,
+      "name": "Cronio",
+      "image": "items/item-41.png",
+      "description": ""
+    },
+    {
+      "id": 42,
+      "name": "Oro",
+      "image": "items/item-42.png",
+      "description": ""
+    },
+    {
+      "id": 43,
+      "name": "Mitrilo",
+      "image": "items/item-43.png",
+      "description": ""
+    },
+    {
+      "id": 44,
+      "name": "Fluidirita",
+      "image": "items/item-44.png",
+      "description": ""
+    },
+    {
+      "id": 45,
+      "name": "Oxigenio",
+      "image": "items/item-45.png",
+      "description": ""
+    },
+    {
+      "id": 46,
+      "name": "Resonita",
+      "image": "items/item-46.png",
+      "description": ""
+    },
+    {
+      "id": 47,
+      "name": "Luminita",
+      "image": "items/item-47.png",
+      "description": ""
+    },
+    {
+      "id": 48,
+      "name": "Kassimerita",
+      "image": "items/item-48.png",
+      "description": ""
+    },
+    {
+      "id": 49,
+      "name": "Magma Cristalizado",
+      "image": "items/item-49.png",
+      "description": ""
+    },
+    {
+      "id": 50,
+      "name": "Bismuto",
+      "image": "items/item-50.png",
+      "description": ""
+    },
+    {
+      "id": 51,
+      "name": "Vidrio solar",
+      "image": "items/item-51.png",
+      "description": ""
+    },
+    {
+      "id": 52,
+      "name": "Singularita",
+      "image": "items/item-52.png",
+      "description": ""
+    },
+    {
+      "id": 53,
+      "name": "Apalescita",
+      "image": "items/item-53.png",
+      "description": ""
+    },
+    {
+      "id": 54,
+      "name": "Lumidotita",
+      "image": "items/item-54.png",
+      "description": ""
     }
   ]
 }
