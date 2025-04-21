@@ -167,11 +167,11 @@
                     <div class="form-group">
                         <label for="ship-cargo">Espacio de la bahía de carga</label>
                         <select id="ship-cargo">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="0">0 (2 espacios)</option>
+                            <option value="1">1 (6 espacios)</option>
+                            <option value="2">2 (10 espacios)</option>
+                            <option value="3">3 (14 espacios)</option>
+                            <option value="4">4 (18 espacios)</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -203,6 +203,12 @@
                     </div>
                     <div id="ship-parts" style="display: none;">
                         <!-- Las partes de la nave se cargarán dinámicamente aquí -->
+                    </div>
+                    
+                    <h3>Inventario de la Nave</h3>
+                    <p>Los espacios disponibles dependen del nivel de mejora de la bahía de carga.</p>
+                    <div id="ship-inventory-container" class="inventory-grid">
+                        <!-- El inventario de la nave se generará dinámicamente aquí -->
                     </div>
                 </div>
             </div>

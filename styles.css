@@ -302,7 +302,7 @@ section h2 {
 }
 
 /* Inventory Grid */
-.inventory-grid {
+.inventory-grid, .ship-inventory-grid {
     display: grid;
     grid-template-columns: repeat(9, minmax(100px, 1fr));
     gap: 12px;
@@ -310,22 +310,29 @@ section h2 {
     margin: 0 auto;
 }
 
-.inventory-item {
+.inventory-item, .ship-inventory-item {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 10px;
     text-align: center;
     position: relative;
     background-color: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
 }
 
-.inventory-item img {
+.inventory-item img, .ship-inventory-item img {
     max-width: 50px;
     height: 50px;
 }
 
 .item-icon {
     margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
 }
 
 .item-name {
@@ -353,13 +360,46 @@ section h2 {
     text-align: left;
 }
 
-.inventory-item input {
+.inventory-item input, .ship-inventory-item input {
     width: 100%;
     padding: 5px;
     background-color: var(--card-bg);
     color: var(--text-color);
     border: 1px solid var(--border-color);
     border-radius: 4px;
+}
+
+/* Estilos específicos para el inventario de la nave */
+.ship-inventory-grid {
+    margin: 20px auto;
+}
+
+.inventory-item.empty, .ship-inventory-item.empty {
+    border: 2px dashed var(--border-color);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.ship-inventory-item.locked {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+    cursor: not-allowed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ship-inventory-item.locked::after {
+    content: '🔒';
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.4;
+    z-index: 1;
 }
 
 /* Botones de acción */
@@ -503,5 +543,15 @@ footer a {
     
     .action-buttons {
         flex-direction: column;
+    }
+
+    .ship-inventory-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .ship-inventory-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

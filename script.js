@@ -2,6 +2,7 @@
 let gameData = null;
 let itemsData = null;
 let currentSlot = 0;
+let shipInventory = [];
 
 document.addEventListener('DOMContentLoaded', function() {
     // Cargar información de los ítems
@@ -196,6 +197,233 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
+    }
+
+    // Añadir evento para actualizar el inventario de la nave cuando cambia el nivel de la bahía de carga
+    const shipCargoSelect = document.getElementById('ship-cargo');
+    if (shipCargoSelect) {
+        shipCargoSelect.addEventListener('change', function() {
+            updateShipInventorySlots();
+        });
+    }
+    
+    // Función para actualizar los slots del inventario de la nave según el nivel de la bahía de carga
+    function updateShipInventorySlots() {
+        if (!gameData || !gameData.gameData || !gameData.gameData.slotData || !gameData.gameData.slotData[currentSlot]) {
+            return;
+        }
+        
+        const slotData = gameData.gameData.slotData[currentSlot];
+        const shipCargoLevel = parseInt(document.getElementById('ship-cargo').value) || 0;
+        
+        // Obtener el número de espacios según el nivel de la bahía de carga
+        const spacesAvailable = getShipInventorySpaces(shipCargoLevel);
+        
+        // Aseguramos que el inventario de la nave existe
+        if (!slotData.shipInventorySaveItems) {
+            slotData.shipInventorySaveItems = [];
+        }
+        
+        // Si necesitamos añadir más espacios al inventario
+        while (slotData.shipInventorySaveItems.length < spacesAvailable) {
+            slotData.shipInventorySaveItems.push({
+                itemID: 0,
+                amount: 0,
+                isEmpty: true
+            });
+        }
+        
+        // Mostrar el inventario de la nave
+        renderShipInventory(slotData, spacesAvailable);
+    }
+    
+    // Función para obtener el número de espacios según el nivel de la bahía de carga
+    function getShipInventorySpaces(cargoLevel) {
+        // Bahía de carga:
+        // - Mejora 0: 2 espacios
+        // - Mejora 1: 6 espacios
+        // - Mejora 2: 10 espacios
+        // - Mejora 3: 14 espacios
+        // - Mejora 4: 18 espacios
+        switch (cargoLevel) {
+            case 0: return 2;
+            case 1: return 6;
+            case 2: return 10;
+            case 3: return 14;
+            case 4: return 18;
+            default: return 2;
+        }
+    }
+    
+    // Función para renderizar el inventario de la nave
+    function renderShipInventory(slotData, availableSpaces) {
+        const shipInventoryContainer = document.getElementById('ship-inventory-container');
+        if (!shipInventoryContainer) return;
+        
+        shipInventoryContainer.innerHTML = '';
+        
+        // Total de espacios a mostrar (siempre mostramos 18 slots, bloqueando los que no están disponibles)
+        const totalSlots = 18;
+        
+        for (let i = 0; i < totalSlots; i++) {
+            const itemDiv = document.createElement('div');
+            
+            // Determinar si el slot está disponible según el nivel de la bahía de carga
+            if (i < availableSpaces) {
+                itemDiv.className = 'inventory-item'; // Usar la misma clase que el inventario principal
+                
+                // Obtener información del ítem si existe
+                const item = slotData.shipInventorySaveItems[i] || { itemID: 0, amount: 0, isEmpty: true };
+                
+                // Buscar información del ítem en el JSON cargado
+                let itemInfo = null;
+                if (itemsData && itemsData.items && item.itemID > 0) {
+                    itemInfo = itemsData.items.find(i => i.id === item.itemID);
+                }
+                
+                // Crear un elemento para el icono del elemento
+                const itemIcon = document.createElement('div');
+                itemIcon.className = 'item-icon';
+                
+                if (item.isEmpty || item.itemID === 0) {
+                    itemDiv.classList.add('empty');
+                    itemIcon.textContent = '📦';
+                    itemIcon.style.fontSize = '24px';
+                } else if (itemInfo && itemInfo.image) {
+                    // Si tenemos información de imagen, intentamos cargarla
+                    const img = document.createElement('img');
+                    img.src = `assets/${itemInfo.image}`;
+                    img.alt = itemInfo.name || `Ítem ${item.itemID}`;
+                    img.title = itemInfo.description || '';
+                    img.onerror = function() {
+                        this.onerror = null;
+                        this.src = 'assets/items/default.png';
+                        this.alt = 'Imagen no disponible';
+                    };
+                    itemIcon.appendChild(img);
+                } else {
+                    // Usamos un emoji como respaldo
+                    itemIcon.textContent = '⁉️';
+                    itemIcon.style.fontSize = '24px';
+                }
+                
+                // Crear etiqueta para el nombre del ítem
+                const itemName = document.createElement('p');
+                itemName.className = 'item-name';
+                if (!item.isEmpty && item.itemID > 0 && itemInfo) {
+                    itemName.textContent = itemInfo.name || `Ítem ${item.itemID}`;
+                } else {
+                    itemName.textContent = `Slot ${i + 1}`;
+                }
+                
+                // Crear contenedores y campos solo si es un slot disponible
+                const idContainer = document.createElement('div');
+                idContainer.className = 'input-container';
+                
+                const idLabel = document.createElement('label');
+                idLabel.textContent = 'ID:';
+                idLabel.className = 'input-label';
+                idContainer.appendChild(idLabel);
+                
+                const itemIdInput = document.createElement('input');
+                itemIdInput.type = 'number';
+                itemIdInput.value = item.itemID || 0;
+                itemIdInput.min = 0;
+                itemIdInput.placeholder = 'ID';
+                itemIdInput.title = 'ID del objeto';
+                itemIdInput.dataset.index = i;
+                itemIdInput.dataset.property = 'itemID';
+                itemIdInput.addEventListener('change', updateShipInventoryItem);
+                idContainer.appendChild(itemIdInput);
+                
+                const amountContainer = document.createElement('div');
+                amountContainer.className = 'input-container';
+                
+                const amountLabel = document.createElement('label');
+                amountLabel.textContent = 'Cantidad:';
+                amountLabel.className = 'input-label';
+                amountContainer.appendChild(amountLabel);
+                
+                const itemAmountInput = document.createElement('input');
+                itemAmountInput.type = 'number';
+                itemAmountInput.value = item.amount || 0;
+                itemAmountInput.min = 0;
+                itemAmountInput.placeholder = 'Cantidad';
+                itemAmountInput.title = 'Cantidad';
+                itemAmountInput.dataset.index = i;
+                itemAmountInput.dataset.property = 'amount';
+                itemAmountInput.addEventListener('change', updateShipInventoryItem);
+                amountContainer.appendChild(itemAmountInput);
+                
+                // Agregar todo al elemento de inventario
+                itemDiv.appendChild(itemIcon);
+                itemDiv.appendChild(itemName);
+                itemDiv.appendChild(idContainer);
+                itemDiv.appendChild(amountContainer);
+                
+            } else {
+                // Slot bloqueado (no disponible con el nivel actual de bahía de carga)
+                itemDiv.className = 'inventory-item locked'; // Usar la misma clase base que inventario principal
+                
+                const slotNumber = document.createElement('p');
+                slotNumber.textContent = `Slot ${i + 1}`;
+                slotNumber.className = 'item-name';
+                
+                const lockText = document.createElement('p');
+                lockText.textContent = 'Mejora la bahía de carga para desbloquear';
+                lockText.style.fontSize = '12px';
+                lockText.style.opacity = '0.7';
+                
+                itemDiv.appendChild(slotNumber);
+                itemDiv.appendChild(lockText);
+            }
+            
+            shipInventoryContainer.appendChild(itemDiv);
+        }
+    }
+
+    // Función para actualizar un elemento del inventario de la nave
+    function updateShipInventoryItem(e) {
+        const index = parseInt(e.target.dataset.index);
+        const property = e.target.dataset.property;
+        const value = e.target.value !== '' ? parseInt(e.target.value) : 0;
+        
+        if (gameData && gameData.gameData && gameData.gameData.slotData) {
+            const slotData = gameData.gameData.slotData[currentSlot];
+            
+            if (!slotData.shipInventorySaveItems) {
+                slotData.shipInventorySaveItems = [];
+            }
+            
+            // Aseguramos que el elemento existe
+            if (!slotData.shipInventorySaveItems[index]) {
+                slotData.shipInventorySaveItems[index] = {
+                    itemID: 0,
+                    amount: 0,
+                    isEmpty: true
+                };
+            }
+            
+            // Actualizar la propiedad
+            slotData.shipInventorySaveItems[index][property] = value;
+            
+            // Si el ID es 0 o la cantidad es 0, marcar como vacío
+            if (property === 'itemID' && value === 0) {
+                slotData.shipInventorySaveItems[index].isEmpty = true;
+                slotData.shipInventorySaveItems[index].amount = 0;
+            } else if (property === 'amount' && value === 0) {
+                slotData.shipInventorySaveItems[index].isEmpty = true;
+            } else {
+                slotData.shipInventorySaveItems[index].isEmpty = false;
+            }
+            
+            // Si se cambió el ID, actualizar la visualización del elemento
+            if (property === 'itemID') {
+                const shipCargoLevel = parseInt(document.getElementById('ship-cargo').value) || 0;
+                const availableSpaces = getShipInventorySpaces(shipCargoLevel);
+                renderShipInventory(slotData, availableSpaces);
+            }
+        }
     }
 
     // Funciones para manejar la carga de archivos
@@ -502,6 +730,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Cargar inventario
         loadInventory(slotData);
+        
+        // Actualizar y mostrar el inventario de la nave según el nivel de mejora de la bahía de carga
+        updateShipInventorySlots();
     }
     
     // Cargar los datos del inventario
@@ -525,7 +756,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 itemIcon.className = 'item-icon';
                 
                 if (item.isEmpty) {
-                    itemIcon.textContent = '🚫';
+                    itemIcon.textContent = '📦';
                     itemIcon.style.fontSize = '24px';
                 } else if (itemInfo && itemInfo.image) {
                     // Si tenemos información de imagen, intentamos cargarla
@@ -541,7 +772,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     itemIcon.appendChild(img);
                 } else {
                     // Usamos un emoji como respaldo
-                    itemIcon.textContent = '📦';
+                    itemIcon.textContent = '⁉️';
                     itemIcon.style.fontSize = '24px';
                 }
                 
@@ -605,6 +836,111 @@ document.addEventListener('DOMContentLoaded', function() {
                 itemDiv.appendChild(amountContainer);
                 
                 inventoryContainer.appendChild(itemDiv);
+            });
+        }
+    }
+    
+    // Cargar los datos del inventario de la nave
+    function loadShipInventory(slotData) {
+        const shipInventoryContainer = document.getElementById('ship-inventory-items');
+        shipInventoryContainer.innerHTML = '';
+        
+        if (slotData.shipInventory && slotData.shipInventory.length > 0) {
+            slotData.shipInventory.forEach((item, index) => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'inventory-item';
+                
+                // Buscar información del ítem en el JSON cargado
+                let itemInfo = null;
+                if (itemsData && itemsData.items) {
+                    itemInfo = itemsData.items.find(i => i.id === item.itemID);
+                }
+                
+                // Crear un elemento para el icono del elemento
+                const itemIcon = document.createElement('div');
+                itemIcon.className = 'item-icon';
+                
+                if (item.isEmpty) {
+                    itemIcon.textContent = '🚫';
+                    itemIcon.style.fontSize = '24px';
+                } else if (itemInfo && itemInfo.image) {
+                    // Si tenemos información de imagen, intentamos cargarla
+                    const img = document.createElement('img');
+                    img.src = `assets/${itemInfo.image}`;
+                    img.alt = itemInfo.name || `Ítem ${item.itemID}`;
+                    img.title = itemInfo.description || '';
+                    img.onerror = function() {
+                        this.onerror = null;
+                        this.src = 'assets/items/default.png';
+                        this.alt = 'Imagen no disponible';
+                    };
+                    itemIcon.appendChild(img);
+                } else {
+                    // Usamos un emoji como respaldo
+                    itemIcon.textContent = '📦';
+                    itemIcon.style.fontSize = '24px';
+                }
+                
+                // Crear etiqueta para el nombre del ítem
+                const itemName = document.createElement('p');
+                itemName.className = 'item-name';
+                if (!item.isEmpty && itemInfo) {
+                    itemName.textContent = itemInfo.name || `Ítem ${item.itemID}`;
+                } else {
+                    itemName.textContent = `Slot ${index + 1}`;
+                }
+                
+                // Crear contenedor para el input de ID
+                const idContainer = document.createElement('div');
+                idContainer.className = 'input-container';
+                
+                // Crear etiqueta para el ID
+                const idLabel = document.createElement('label');
+                idLabel.textContent = 'ID:';
+                idLabel.className = 'input-label';
+                idContainer.appendChild(idLabel);
+                
+                // Crear campo para ID del elemento
+                const itemIdInput = document.createElement('input');
+                itemIdInput.type = 'number';
+                itemIdInput.value = item.itemID;
+                itemIdInput.min = 0;
+                itemIdInput.placeholder = 'ID';
+                itemIdInput.title = 'ID del objeto';
+                itemIdInput.dataset.index = index;
+                itemIdInput.dataset.property = 'itemID';
+                itemIdInput.addEventListener('change', updateShipInventoryItem);
+                idContainer.appendChild(itemIdInput);
+                
+                // Crear contenedor para el input de cantidad
+                const amountContainer = document.createElement('div');
+                amountContainer.className = 'input-container';
+                
+                // Crear etiqueta para la cantidad
+                const amountLabel = document.createElement('label');
+                amountLabel.textContent = 'Cantidad:';
+                amountLabel.className = 'input-label';
+                amountContainer.appendChild(amountLabel);
+                
+                // Crear campo para cantidad
+                const itemAmountInput = document.createElement('input');
+                itemAmountInput.type = 'number';
+                itemAmountInput.value = item.amount;
+                itemAmountInput.min = 0;
+                itemAmountInput.placeholder = 'Cantidad';
+                itemAmountInput.title = 'Cantidad';
+                itemAmountInput.dataset.index = index;
+                itemAmountInput.dataset.property = 'amount';
+                itemAmountInput.addEventListener('change', updateShipInventoryItem);
+                amountContainer.appendChild(itemAmountInput);
+                
+                // Agregar todo al elemento de inventario
+                itemDiv.appendChild(itemIcon);
+                itemDiv.appendChild(itemName);
+                itemDiv.appendChild(idContainer);
+                itemDiv.appendChild(amountContainer);
+                
+                shipInventoryContainer.appendChild(itemDiv);
             });
         }
     }
@@ -715,6 +1051,24 @@ document.addEventListener('DOMContentLoaded', function() {
                             slotData.shipParts[mapping.index].currentProgress = parseInt(select.value) || 0;
                         }
                     }
+                });
+            }
+            
+            // Asegurarse de que el inventario de la nave esté inicializado y actualizado
+            if (!slotData.shipInventorySaveItems) {
+                slotData.shipInventorySaveItems = [];
+            }
+            
+            // Obtener el nivel de mejora de la bahía de carga para saber cuántos espacios hay disponibles
+            const shipCargoLevel = parseInt(document.getElementById('ship-cargo').value) || 0;
+            const availableSpaces = getShipInventorySpaces(shipCargoLevel);
+            
+            // Asegurarse de que haya suficientes espacios en el inventario de la nave
+            while (slotData.shipInventorySaveItems.length < availableSpaces) {
+                slotData.shipInventorySaveItems.push({
+                    itemID: 0,
+                    amount: 0,
+                    isEmpty: true
                 });
             }
             
