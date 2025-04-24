@@ -531,6 +531,12 @@ footer a {
 }
 
 /* Responsive */
+@media (max-width: 1090px) {
+    .inventory-grid, .ship-inventory-grid {
+        grid-template-columns: repeat(6, minmax(100px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     .tabs {
         flex-wrap: wrap;
@@ -546,12 +552,16 @@ footer a {
     }
 
     .ship-inventory-grid {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .inventory-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    .ship-inventory-grid {
+    .ship-inventory-grid, .inventory-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }

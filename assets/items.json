@@ -485,6 +485,168 @@
       "name": "Esturión erizo",
       "image": "items/item-81.png",
       "description": ""
+    },
+    {
+      "id": 82,
+      "name": "Pez cola de fuego",
+      "image": "items/item-82.png",
+      "description": ""
+    },
+    {
+      "id": 83,
+      "name": "Nemorquina",
+      "image": "items/item-83.png",
+      "description": ""
+    },
+    {
+      "id": 84,
+      "name": "Escairón",
+      "image": "items/item-84.png",
+      "description": ""
+    },
+    {
+      "id": 85,
+      "name": "Pez hada",
+      "image": "items/item-85.png",
+      "description": ""
+    },
+    {
+      "id": 86,
+      "name": "Libélula nadadora",
+      "image": "items/item-86.png",
+      "description": ""
+    },
+    {
+      "id": 87,
+      "name": "Luciérnaga borhiana",
+      "image": "items/item-87.png",
+      "description": ""
+    },
+    {
+      "id": 88,
+      "name": "Nebuposa",
+      "image": "items/item-88.png",
+      "description": ""
+    },
+    {
+      "id": 89,
+      "name": "Insecto ígneo",
+      "image": "items/item-89.png",
+      "description": ""
+    },
+    {
+      "id": 90,
+      "name": "Cataña",
+      "image": "items/item-90.png",
+      "description": ""
+    },
+    {
+      "id": 91,
+      "name": "Polilla de algodón",
+      "image": "items/item-91.png",
+      "description": ""
+    },
+    {
+      "id": 92,
+      "name": "Mosquito hinchado",
+      "image": "items/item-92.png",
+      "description": ""
+    },
+    {
+      "id": 93,
+      "name": "Tintinojo",
+      "image": "items/item-93.png",
+      "description": ""
+    },
+    {
+      "id": 94,
+      "name": "Cigarra diamante",
+      "image": "items/item-94.png",
+      "description": ""
+    },
+    {
+      "id": 95,
+      "name": "Ninfa azabache",
+      "image": "items/item-95.png",
+      "description": ""
+    },
+    {
+      "id": 96,
+      "name": "Medusa voladora",
+      "image": "items/item-96.png",
+      "description": ""
+    },
+    {
+      "id": 97,
+      "name": "Bulbo volador",
+      "image": "items/item-97.png",
+      "description": ""
+    },
+    {
+      "id": 98,
+      "name": "Buchi burbuja",
+      "image": "items/item-98.png",
+      "description": ""
+    },
+    {
+      "id": 99,
+      "name": "Fluffusk",
+      "image": "items/item-99.png",
+      "description": ""
+    },
+    {
+      "id": 100,
+      "name": "Ragnato",
+      "image": "items/item-100.png",
+      "description": ""
+    },
+    {
+      "id": 101,
+      "name": "Mosca de néctar",
+      "image": "items/item-101.png",
+      "description": ""
+    },
+    {
+      "id": 102,
+      "name": "Araña colorida",
+      "image": "items/item-102.png",
+      "description": ""
+    },
+    {
+      "id": 103,
+      "name": "Ciempiés taladro",
+      "image": "items/item-103.png",
+      "description": ""
+    },
+    {
+      "id": 104,
+      "name": "Tricacio",
+      "image": "items/item-104.png",
+      "description": ""
+    },
+    {
+      "id": 105,
+      "name": "Salta-lunas",
+      "image": "items/item-105.png",
+      "description": ""
+    },
+    {
+      "id": 106,
+      "name": "Cubeliyo",
+      "image": "items/item-106.png",
+      "description": ""
+    },
+    {
+      "id": 107,
+      "name": "Mariposa ángel",
+      "image": "items/item-107.png",
+      "description": ""
+    },
+    {
+      "id": 108,
+      "name": "Bacteria",
+      "image": "items/item-108.png",
+      "description": ""
     }
   ]
 }
