@@ -647,6 +647,168 @@
       "name": "Bacteria",
       "image": "items/item-108.png",
       "description": ""
+    },
+    {
+      "id": 109,
+      "name": "Fouldus",
+      "image": "items/item-109.png",
+      "description": ""
+    },
+    {
+      "id": 110,
+      "name": "Slugra",
+      "image": "items/item-110.png",
+      "description": ""
+    },
+    {
+      "id": 111,
+      "name": "Niroide",
+      "image": "items/item-111.png",
+      "description": ""
+    },
+    {
+      "id": 112,
+      "name": "Vorgolia",
+      "image": "items/item-112.png",
+      "description": ""
+    },
+    {
+      "id": 113,
+      "name": "Avispa vanadia",
+      "image": "items/item-113.png",
+      "description": ""
+    },
+    {
+      "id": 114,
+      "name": "Mosca frondosa",
+      "image": "items/item-114.png",
+      "description": ""
+    },
+    {
+      "id": 115,
+      "name": "Hexagóculo",
+      "image": "items/item-115.png",
+      "description": ""
+    },
+    {
+      "id": 116,
+      "name": "Flor galeana",
+      "image": "items/item-116.png",
+      "description": ""
+    },
+    {
+      "id": 117,
+      "name": "Madera galeana",
+      "image": "items/item-117.png",
+      "description": ""
+    },
+    {
+      "id": 118,
+      "name": "Semilla de árbol galeano",
+      "image": "items/item-118.png",
+      "description": ""
+    },
+    {
+      "id": 119,
+      "name": "Champiñón galeano",
+      "image": "items/item-119.png",
+      "description": ""
+    },
+    {
+      "id": 120,
+      "name": "Seta galeana",
+      "image": "items/item-120.png",
+      "description": ""
+    },
+    {
+      "id": 121,
+      "name": "Helecho",
+      "image": "items/item-121.png",
+      "description": ""
+    },
+    {
+      "id": 122,
+      "name": "Cactus",
+      "image": "items/item-122.png",
+      "description": ""
+    },
+    {
+      "id": 123,
+      "name": "Coco",
+      "image": "items/item-123.png",
+      "description": ""
+    },
+    {
+      "id": 124,
+      "name": "Roca del desierto",
+      "image": "items/item-124.png",
+      "description": ""
+    },
+    {
+      "id": 125,
+      "name": "Madera de palmera",
+      "image": "items/item-125.png",
+      "description": ""
+    },
+    {
+      "id": 126,
+      "name": "Semilla de palmera",
+      "image": "items/item-126.png",
+      "description": ""
+    },
+    {
+      "id": 127,
+      "name": "Célula de combustible",
+      "image": "items/item-127.png",
+      "description": ""
+    },
+    {
+      "id": 128,
+      "name": "Mueble",
+      "image": "items/item-128.png",
+      "description": ""
+    },
+    {
+      "id": 129,
+      "name": "Aspersor",
+      "image": "items/item-129.png",
+      "description": ""
+    },
+    {
+      "id": 130,
+      "name": "Valla",
+      "image": "items/item-130.png",
+      "description": ""
+    },
+    {
+      "id": 131,
+      "name": "Titanio",
+      "image": "items/item-131.png",
+      "description": ""
+    },
+    {
+      "id": 132,
+      "name": "Célula triple",
+      "image": "items/item-132.png",
+      "description": ""
+    },
+    {
+      "id": 133,
+      "name": "Tabla de piedra 1",
+      "image": "items/item-133.png",
+      "description": ""
+    },
+    {
+      "id": 134,
+      "name": "Tabla de piedra 2",
+      "image": "items/item-134.png",
+      "description": ""
+    },
+    {
+      "id": 135,
+      "name": "Tabla de piedra 1",
+      "image": "items/item-135.png",
+      "description": ""
     }
   ]
 }
