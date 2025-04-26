@@ -971,6 +971,168 @@
       "name": "Instrumento para viajes temporales",
       "image": "items/item-162.png",
       "description": ""
+    },
+    {
+      "id": 163,
+      "name": "Semillas de odox",
+      "image": "items/item-163.png",
+      "description": ""
+    },
+    {
+      "id": 164,
+      "name": "Odox",
+      "image": "items/item-164.png",
+      "description": ""
+    },
+    {
+      "id": 165,
+      "name": "Semillas de crisful",
+      "image": "items/item-165.png",
+      "description": ""
+    },
+    {
+      "id": 166,
+      "name": "Crisful",
+      "image": "items/item-166.png",
+      "description": ""
+    },
+    {
+      "id": 167,
+      "name": "Semillas de conduri",
+      "image": "items/item-167.png",
+      "description": ""
+    },
+    {
+      "id": 168,
+      "name": "Conduri",
+      "image": "items/item-168.png",
+      "description": ""
+    },
+    {
+      "id": 169,
+      "name": "Semillas de penrose",
+      "image": "items/item-169.png",
+      "description": ""
+    },
+    {
+      "id": 170,
+      "name": "Penrose",
+      "image": "items/item-170.png",
+      "description": ""
+    },
+    {
+      "id": 171,
+      "name": "Semillas de solaria",
+      "image": "items/item-171.png",
+      "description": ""
+    },
+    {
+      "id": 172,
+      "name": "Solaria",
+      "image": "items/item-172.png",
+      "description": ""
+    },
+    {
+      "id": 173,
+      "name": "Semillas de cuadrachofa",
+      "image": "items/item-173.png",
+      "description": ""
+    },
+    {
+      "id": 174,
+      "name": "Cuadrachofa",
+      "image": "items/item-174.png",
+      "description": ""
+    },
+    {
+      "id": 175,
+      "name": "Semillas de vulcitania",
+      "image": "items/item-175.png",
+      "description": ""
+    },
+    {
+      "id": 176,
+      "name": "Brote de vulcitania",
+      "image": "items/item-176.png",
+      "description": ""
+    },
+    {
+      "id": 177,
+      "name": "Semillas de galleta",
+      "image": "items/item-177.png",
+      "description": ""
+    },
+    {
+      "id": 178,
+      "name": "Galleta",
+      "image": "items/item-178.png",
+      "description": ""
+    },
+    {
+      "id": 179,
+      "name": "Semillas piramidales",
+      "image": "items/item-179.png",
+      "description": ""
+    },
+    {
+      "id": 180,
+      "name": "Líquido piramidal",
+      "image": "items/item-180.png",
+      "description": ""
+    },
+    {
+      "id": 181,
+      "name": "Semillas de blóbulo",
+      "image": "items/item-181.png",
+      "description": ""
+    },
+    {
+      "id": 182,
+      "name": "Brote de blóbulo",
+      "image": "items/item-182.png",
+      "description": ""
+    },
+    {
+      "id": 183,
+      "name": "Semillas de bólaro",
+      "image": "items/item-183.png",
+      "description": ""
+    },
+    {
+      "id": 184,
+      "name": "Bólaro",
+      "image": "items/item-184.png",
+      "description": ""
+    },
+    {
+      "id": 185,
+      "name": "Icosemillas",
+      "image": "items/item-185.png",
+      "description": ""
+    },
+    {
+      "id": 186,
+      "name": "Icosandía",
+      "image": "items/item-186.png",
+      "description": ""
+    },
+    {
+      "id": 187,
+      "name": "Semillas de rakkaus",
+      "image": "items/item-187.png",
+      "description": ""
+    },
+    {
+      "id": 188,
+      "name": "Rakkau",
+      "image": "items/item-188.png",
+      "description": ""
+    },
+    {
+      "id": 189,
+      "name": "Semillas de kuriq",
+      "image": "items/item-189.png",
+      "description": ""
     }
   ]
 }
