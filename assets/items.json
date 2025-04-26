@@ -809,6 +809,168 @@
       "name": "Tabla de piedra 1",
       "image": "items/item-135.png",
       "description": ""
+    },
+    {
+      "id": 136,
+      "name": "Tabla de piedra 4",
+      "image": "items/item-136.png",
+      "description": ""
+    },
+    {
+      "id": 137,
+      "name": "Tabla de piedra 5",
+      "image": "items/item-137.png",
+      "description": ""
+    },
+    {
+      "id": 138,
+      "name": "Tinaja antigua",
+      "image": "items/item-138.png",
+      "description": ""
+    },
+    {
+      "id": 139,
+      "name": "Estatua religiosa",
+      "image": "items/item-139.png",
+      "description": ""
+    },
+    {
+      "id": 140,
+      "name": "Máscara de piedra",
+      "image": "items/item-140.png",
+      "description": ""
+    },
+    {
+      "id": 141,
+      "name": "Hueso desconocido",
+      "image": "items/item-141.png",
+      "description": ""
+    },
+    {
+      "id": 142,
+      "name": "Cráneo desconocido",
+      "image": "items/item-142.png",
+      "description": ""
+    },
+    {
+      "id": 143,
+      "name": "Anillo oxidado",
+      "image": "items/item-143.png",
+      "description": ""
+    },
+    {
+      "id": 144,
+      "name": "Cuchilla roma",
+      "image": "items/item-144.png",
+      "description": ""
+    },
+    {
+      "id": 145,
+      "name": "Moneda antigua",
+      "image": "items/item-145.png",
+      "description": ""
+    },
+    {
+      "id": 146,
+      "name": "Protector de la nada",
+      "image": "items/item-146.png",
+      "description": ""
+    },
+    {
+      "id": 147,
+      "name": "Comunicador arcaico",
+      "image": "items/item-147.png",
+      "description": ""
+    },
+    {
+      "id": 148,
+      "name": "Controlador del entretenimiento",
+      "image": "items/item-148.png",
+      "description": ""
+    },
+    {
+      "id": 149,
+      "name": "Cabeza desenterrada",
+      "image": "items/item-149.png",
+      "description": ""
+    },
+    {
+      "id": 150,
+      "name": "Estatua funeraria",
+      "image": "items/item-150.png",
+      "description": ""
+    },
+    {
+      "id": 151,
+      "name": "Escudo viejo",
+      "image": "items/item-151.png",
+      "description": ""
+    },
+    {
+      "id": 152,
+      "name": "Reproductor de melodías arcaicas",
+      "image": "items/item-152.png",
+      "description": ""
+    },
+    {
+      "id": 153,
+      "name": "Mascota olvidada",
+      "image": "items/item-153.png",
+      "description": ""
+    },
+    {
+      "id": 154,
+      "name": "Reto imposible",
+      "image": "items/item-154.png",
+      "description": ""
+    },
+    {
+      "id": 155,
+      "name": "Acompañante de baño",
+      "image": "items/item-155.png",
+      "description": ""
+    },
+    {
+      "id": 156,
+      "name": "Liberador de la ruina",
+      "image": "items/item-156.png",
+      "description": ""
+    },
+    {
+      "id": 157,
+      "name": "Reductor de visión metalizado",
+      "image": "items/item-157.png",
+      "description": ""
+    },
+    {
+      "id": 158,
+      "name": "Casco de la justicia",
+      "image": "items/item-158.png",
+      "description": ""
+    },
+    {
+      "id": 159,
+      "name": "Palanca de la diversión",
+      "image": "items/item-159.png",
+      "description": ""
+    },
+    {
+      "id": 160,
+      "name": "Orbe de fantasía",
+      "image": "items/item-160.png",
+      "description": ""
+    },
+    {
+      "id": 161,
+      "name": "Monitor pesado",
+      "image": "items/item-161.png",
+      "description": ""
+    },
+    {
+      "id": 162,
+      "name": "Instrumento para viajes temporales",
+      "image": "items/item-162.png",
+      "description": ""
     }
   ]
 }

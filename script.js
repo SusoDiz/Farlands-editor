@@ -157,7 +157,19 @@ document.addEventListener('DOMContentLoaded', function() {
     dropArea.addEventListener('dragleave', handleDragLeave);
     dropArea.addEventListener('drop', handleDrop);
     fileInput.addEventListener('change', handleFileSelect);
-    dropArea.addEventListener('click', () => fileInput.click());
+    
+    // Reemplazar este evento para evitar la doble activación
+    // dropArea.addEventListener('click', () => fileInput.click());
+    
+    // Asegurarse de que solo la etiqueta "Seleccionar archivo" active el input
+    const fileLabel = document.querySelector('.file-label');
+    if (fileLabel) {
+        fileLabel.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation(); // Evitar que el evento llegue al área de drop
+            fileInput.click();
+        });
+    }
     
     // Eventos para las pestañas
     tabBtns.forEach(btn => {
