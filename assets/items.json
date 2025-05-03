@@ -1133,6 +1133,330 @@
       "name": "Semillas de kuriq",
       "image": "items/item-189.png",
       "description": ""
+    },
+    {
+      "id": 190,
+      "name": "Kuriq",
+      "image": "items/item-190.png",
+      "description": ""
+    },
+    {
+      "id": 191,
+      "name": "Semillas de mollifruta",
+      "image": "items/item-191.png",
+      "description": ""
+    },
+    {
+      "id": 192,
+      "name": "Mollifruta",
+      "image": "items/item-192.png",
+      "description": ""
+    },
+    {
+      "id": 193,
+      "name": "Semillas de pelombio",
+      "image": "items/item-193.png",
+      "description": ""
+    },
+    {
+      "id": 194,
+      "name": "Pelombio",
+      "image": "items/item-194.png",
+      "description": ""
+    },
+    {
+      "id": 195,
+      "name": "Semilla de chinola",
+      "image": "items/item-195.png",
+      "description": ""
+    },
+    {
+      "id": 196,
+      "name": "Chinola de cristal",
+      "image": "items/item-196.png",
+      "description": ""
+    },
+    {
+      "id": 197,
+      "name": "Semillas de cucuí",
+      "image": "items/item-197.png",
+      "description": ""
+    },
+    {
+      "id": 198,
+      "name": "Cucuí",
+      "image": "items/item-198.png",
+      "description": ""
+    },
+    {
+      "id": 199,
+      "name": "Semillas de globolabaza",
+      "image": "items/item-199.png",
+      "description": ""
+    },
+    {
+      "id": 200,
+      "name": "Globolabaza",
+      "image": "items/item-200.png",
+      "description": ""
+    },
+    {
+      "id": 201,
+      "name": "Lata vieja",
+      "image": "items/item-201.png",
+      "description": ""
+    },
+    {
+      "id": 202,
+      "name": "Bota empapada",
+      "image": "items/item-202.png",
+      "description": ""
+    },
+    {
+      "id": 203,
+      "name": "Anillas de plástico",
+      "image": "items/item-203.png",
+      "description": ""
+    },
+    {
+      "id": 204,
+      "name": "Saco de basura",
+      "image": "items/item-204.png",
+      "description": ""
+    },
+    {
+      "id": 205,
+      "name": "Pneumático viejo",
+      "image": "items/item-205.png",
+      "description": ""
+    },
+    {
+      "id": 206,
+      "name": "Vaso de plástico",
+      "image": "items/item-206.png",
+      "description": ""
+    },
+    {
+      "id": 207,
+      "name": "Cactus terbinita",
+      "image": "items/item-207.png",
+      "description": ""
+    },
+    {
+      "id": 208,
+      "name": "Hierba borhiana",
+      "image": "items/item-208.png",
+      "description": ""
+    },
+    {
+      "id": 209,
+      "name": "Hierba galeana",
+      "image": "items/item-209.png",
+      "description": ""
+    },
+    {
+      "id": 210,
+      "name": "Hierba terbinita",
+      "image": "items/item-210.png",
+      "description": ""
+    },
+    {
+      "id": 211,
+      "name": "Hierba terbinita oscura",
+      "image": "items/item-211.png",
+      "description": ""
+    },
+    {
+      "id": 212,
+      "name": "Valla galeana",
+      "image": "items/item-212.png",
+      "description": ""
+    },
+    {
+      "id": 213,
+      "name": "Suelo de tablones",
+      "image": "items/item-213.png",
+      "description": ""
+    },
+    {
+      "id": 214,
+      "name": "Suelo elegante de tablones",
+      "image": "items/item-214.png",
+      "description": ""
+    },
+    {
+      "id": 215,
+      "name": "Valla terbinita",
+      "image": "items/item-215.png",
+      "description": ""
+    },
+    {
+      "id": 216,
+      "name": "Barril",
+      "image": "items/item-216.png",
+      "description": ""
+    },
+    {
+      "id": 217,
+      "name": "Caja",
+      "image": "items/item-217.png",
+      "description": ""
+    },
+    {
+      "id": 218,
+      "name": "Barril galeano",
+      "image": "items/item-218.png",
+      "description": ""
+    },
+    {
+      "id": 219,
+      "name": "Caja galeana",
+      "image": "items/item-219.png",
+      "description": ""
+    },
+    {
+      "id": 220,
+      "name": "Biombo alto azul",
+      "image": "items/item-220.png",
+      "description": ""
+    },
+    {
+      "id": 221,
+      "name": "Cartel madera azul",
+      "image": "items/item-221.png",
+      "description": ""
+    },
+    {
+      "id": 222,
+      "name": "Maceta azul",
+      "image": "items/item-222.png",
+      "description": ""
+    },
+    {
+      "id": 223,
+      "name": "Taburete azul",
+      "image": "items/item-223.png",
+      "description": ""
+    },
+    {
+      "id": 224,
+      "name": "Troncos azules",
+      "image": "items/item-224.png",
+      "description": ""
+    },
+    {
+      "id": 225,
+      "name": "Casita para pájaros azul",
+      "image": "items/item-225.png",
+      "description": ""
+    },
+    {
+      "id": 226,
+      "name": "Piedra decorativa",
+      "image": "items/item-226.png",
+      "description": ""
+    },
+    {
+      "id": 227,
+      "name": "Jarrón de piedra",
+      "image": "items/item-227.png",
+      "description": ""
+    },
+    {
+      "id": 228,
+      "name": "Gnomo de piedra",
+      "image": "items/item-228.png",
+      "description": ""
+    },
+    {
+      "id": 229,
+      "name": "Estatua de piedra",
+      "image": "items/item-229.png",
+      "description": ""
+    },
+    {
+      "id": 230,
+      "name": "Pozo de piedra",
+      "image": "items/item-230.png",
+      "description": ""
+    },
+    {
+      "id": 231,
+      "name": "Pilar de piedra",
+      "image": "items/item-231.png",
+      "description": ""
+    },
+    {
+      "id": 232,
+      "name": "Banco de piedra",
+      "image": "items/item-232.png",
+      "description": ""
+    },
+    {
+      "id": 233,
+      "name": "Valla de piedra",
+      "image": "items/item-233.png",
+      "description": ""
+    },
+    {
+      "id": 234,
+      "name": "Suelo de gravilla",
+      "image": "items/item-234.png",
+      "description": ""
+    },
+    {
+      "id": 235,
+      "name": "Suelo de piedras",
+      "image": "items/item-235.png",
+      "description": ""
+    },
+    {
+      "id": 236,
+      "name": "Mochila pequeña",
+      "image": "items/item-236.png",
+      "description": ""
+    },
+    {
+      "id": 237,
+      "name": "Mochila grande",
+      "image": "items/item-237.png",
+      "description": ""
+    },
+    {
+      "id": 238,
+      "name": "Set madera azul (EXTERIOR)",
+      "image": "items/item-238.png",
+      "description": ""
+    },
+    {
+      "id": 239,
+      "name": "Set piedra (EXTERIOR)",
+      "image": "items/item-239.png",
+      "description": ""
+    },
+    {
+      "id": 240,
+      "name": "Hacha de celestio",
+      "image": "items/item-240.png",
+      "description": ""
+    },
+    {
+      "id": 241,
+      "name": "Hacha de plata",
+      "image": "items/item-241.png",
+      "description": ""
+    },
+    {
+      "id": 242,
+      "name": "Hacha de cronio",
+      "image": "items/item-242.png",
+      "description": ""
+    },
+    {
+      "id": 243,
+      "name": "Hacha de mitrilo",
+      "image": "items/item-243.png",
+      "description": ""
     }
   ]
 }
