@@ -696,6 +696,11 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('hoeLevel').value = slotData.hoeLevel || 0;
         document.getElementById('wateringCanLevel').value = slotData.wateringCanLevel || 0;
         
+        // Cargar nivel de la casa (convertir de 1-4 a 0-3)
+        const houseSelect = document.getElementById('currentHouseLevel');
+        const houseLevel = slotData.currentHouseLevel ? (slotData.currentHouseLevel - 1) : 0;
+        houseSelect.value = houseLevel;
+        
         // Cargar datos de la nave espacial
         document.getElementById('shipEnergy').value = slotData.spaceShipCurrentEnergy || 0;
         document.getElementById('shipCells').value = slotData.spaceShipAvailableCells || 0;
@@ -1037,6 +1042,9 @@ document.addEventListener('DOMContentLoaded', function() {
             slotData.sickleLevel = parseInt(document.getElementById('sickleLevel').value) || 0;
             slotData.hoeLevel = parseInt(document.getElementById('hoeLevel').value) || 0;
             slotData.wateringCanLevel = parseInt(document.getElementById('wateringCanLevel').value) || 0;
+            
+            // Guardar nivel de la casa
+            slotData.currentHouseLevel = parseInt(document.getElementById('currentHouseLevel').value) + 1 || 1;
             
             // Actualizar datos de la nave espacial
             slotData.spaceShipCurrentEnergy = parseInt(document.getElementById('shipEnergy').value) || 0;
