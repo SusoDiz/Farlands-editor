@@ -1457,6 +1457,168 @@
       "name": "Hacha de mitrilo",
       "image": "items/item-243.png",
       "description": ""
+    },
+    {
+      "id": 244,
+      "name": "Pico de celestio",
+      "image": "items/item-244.png",
+      "description": ""
+    },
+    {
+      "id": 245,
+      "name": "Pico de plata",
+      "image": "items/item-245.png",
+      "description": ""
+    },
+    {
+      "id": 246,
+      "name": "Pico de cronio",
+      "image": "items/item-246.png",
+      "description": ""
+    },
+    {
+      "id": 247,
+      "name": "Pico de mitrilo",
+      "image": "items/item-247.png",
+      "description": ""
+    },
+    {
+      "id": 248,
+      "name": "Azada de celestio",
+      "image": "items/item-248.png",
+      "description": ""
+    },
+    {
+      "id": 249,
+      "name": "Azada de plata",
+      "image": "items/item-249.png",
+      "description": ""
+    },
+    {
+      "id": 250,
+      "name": "Azada de cronio",
+      "image": "items/item-250.png",
+      "description": ""
+    },
+    {
+      "id": 251,
+      "name": "Azada de mitrilo",
+      "image": "items/item-251.png",
+      "description": ""
+    },
+    {
+      "id": 252,
+      "name": "Hoz de celestio",
+      "image": "items/item-252.png",
+      "description": ""
+    },
+    {
+      "id": 253,
+      "name": "Hoz de plata",
+      "image": "items/item-253.png",
+      "description": ""
+    },
+    {
+      "id": 254,
+      "name": "Hoz de cronio",
+      "image": "items/item-254.png",
+      "description": ""
+    },
+    {
+      "id": 255,
+      "name": "Hoz de mitrilo",
+      "image": "items/item-255.png",
+      "description": ""
+    },
+    {
+      "id": 256,
+      "name": "Regadera de celestio",
+      "image": "items/item-256.png",
+      "description": ""
+    },
+    {
+      "id": 257,
+      "name": "Regadera de plata",
+      "image": "items/item-257.png",
+      "description": ""
+    },
+    {
+      "id": 258,
+      "name": "Regadera de cronio",
+      "image": "items/item-258.png",
+      "description": ""
+    },
+    {
+      "id": 259,
+      "name": "Regadera de mitrilo",
+      "image": "items/item-259.png",
+      "description": ""
+    },
+    {
+      "id": 260,
+      "name": "Cofre pequeño",
+      "image": "items/item-260.png",
+      "description": ""
+    },
+    {
+      "id": 261,
+      "name": "Aspersor mejorado",
+      "image": "items/item-261.png",
+      "description": ""
+    },
+    {
+      "id": 262,
+      "name": "Aspersor de calidad",
+      "image": "items/item-262.png",
+      "description": ""
+    },
+    {
+      "id": 263,
+      "name": "Teletransportador azul",
+      "image": "items/item-263.png",
+      "description": ""
+    },
+    {
+      "id": 264,
+      "name": "Teletransportador naranja",
+      "image": "items/item-264.png",
+      "description": ""
+    },
+    {
+      "id": 265,
+      "name": "Teletransportador rojo",
+      "image": "items/item-265.png",
+      "description": ""
+    },
+    {
+      "id": 266,
+      "name": "Teletransportador amarillo",
+      "image": "items/item-266.png",
+      "description": ""
+    },
+    {
+      "id": 267,
+      "name": "Teletransportador verde",
+      "image": "items/item-267.png",
+      "description": ""
+    },
+    {
+      "id": 268,
+      "name": "Teletransportador morado",
+      "image": "items/item-268.png",
+      "description": ""
+    },
+    {
+      "id": 269,
+      "name": "Hierba del desierto",
+      "image": "items/item-269.png",
+      "description": ""
+    },
+    {
+      "id": 270,
+      "name": "Teletransportador",
+      "image": "items/item-270.png",
+      "description": ""
     }
   ]
 }
