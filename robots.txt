@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://farlands-editor.susodiz.com/sitemap.xml
