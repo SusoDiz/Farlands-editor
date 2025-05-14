@@ -3,1621 +3,1621 @@
     {
       "id": 1,
       "name": "Hacha",
-      "image": "items/item-1.png",
+      "image": "items/Item_1.png",
       "description": ""
     },
     {
       "id": 2,
       "name": "Azada",
-      "image": "items/item-2.png",
+      "image": "items/Item_2.png",
       "description": ""
     },
     {
       "id": 3,
       "name": "Pico",
-      "image": "items/item-3.png",
+      "image": "items/Item_3.png",
       "description": ""
     },
     {
       "id": 4,
       "name": "Hoz",
-      "image": "items/item-4.png",
+      "image": "items/Item_4.png",
       "description": ""
     },
     {
       "id": 5,
       "name": "Caña de Pescar",
-      "image": "items/item-5.png",
+      "image": "items/Item_5.png",
       "description": ""
     },
     {
       "id": 6,
       "name": "Red",
-      "image": "items/item-6.png",
+      "image": "items/Item_6.png",
       "description": ""
     },
     {
       "id": 7,
       "name": "Madera",
-      "image": "items/item-7.png",
+      "image": "items/Item_7.png",
       "description": ""
     },
     {
       "id": 8,
       "name": "Hierba",
-      "image": "items/item-8.png",
+      "image": "items/Item_8.png",
       "description": ""
     },
     {
       "id": 9,
       "name": "Savia",
-      "image": "items/item-9.png",
+      "image": "items/Item_9.png",
       "description": ""
     },
     {
       "id": 10,
       "name": "Piedra",
-      "image": "items/item-10.png",
+      "image": "items/Item_10.png",
       "description": ""
     },
     {
       "id": 11,
       "name": "Geoda",
-      "image": "items/item-11.png",
+      "image": "items/Item_11.png",
       "description": ""
     },
     {
       "id": 12,
       "name": "Carbón",
-      "image": "items/item-12.png",
+      "image": "items/Item_12.png",
       "description": ""
     },
     {
       "id": 13,
       "name": "Turba",
-      "image": "items/item-13.png",
+      "image": "items/Item_13.png",
       "description": ""
     },
     {
       "id": 14,
       "name": "Piña",
-      "image": "items/item-14.png",
+      "image": "items/Item_14.png",
       "description": ""
     },
     {
       "id": 15,
       "name": "Semilla de fruta temporal",
-      "image": "items/item-15.png",
+      "image": "items/Item_15.png",
       "description": ""
     },
     {
       "id": 16,
       "name": "Fruto temporal",
-      "image": "items/item-16.png",
+      "image": "items/Item_16.png",
       "description": ""
     },
     {
       "id": 17,
       "name": "Semillas variadas",
-      "image": "items/item-17.png",
+      "image": "items/Item_17.png",
       "description": ""
     },
     {
       "id": 18,
       "name": "Cobre",
-      "image": "items/item-18.png",
+      "image": "items/Item_18.png",
       "description": ""
     },
     {
       "id": 19,
       "name": "Plata",
-      "image": "items/item-19.png",
+      "image": "items/Item_19.png",
       "description": ""
     },
     {
       "id": 20,
       "name": "Chatarra",
-      "image": "items/item-20.png",
+      "image": "items/Item_20.png",
       "description": ""
     },
     {
       "id": 21,
       "name": "Pieza de recambio",
-      "image": "items/item-21.png",
+      "image": "items/Item_21.png",
       "description": ""
     },
     {
       "id": 22,
       "name": "Regadera",
-      "image": "items/item-22.png",
+      "image": "items/Item_22.png",
       "description": ""
     },
     {
       "id": 23,
       "name": "Semillas de cactus",
-      "image": "items/item-23.png",
+      "image": "items/Item_23.png",
       "description": ""
     },
     {
       "id": 24,
       "name": "Semillas de azafrán bumerang",
-      "image": "items/item-24.png",
+      "image": "items/Item_24.png",
       "description": ""
     },
     {
       "id": 25,
       "name": "Semillas de queso vegano",
-      "image": "items/item-25.png",
+      "image": "items/Item_25.png",
       "description": ""
     },
     {
       "id": 26,
       "name": "Semillas de limo",
-      "image": "items/item-26.png",
+      "image": "items/Item_26.png",
       "description": ""
     },
     {
       "id": 27,
       "name": "Flor de cactus",
-      "image": "items/item-27.png",
+      "image": "items/Item_27.png",
       "description": ""
     },
     {
       "id": 28,
       "name": "Azafrán boomerang",
-      "image": "items/item-28.png",
+      "image": "items/Item_28.png",
       "description": ""
     },
     {
       "id": 29,
       "name": "Queso vegano",
-      "image": "items/item-29.png",
+      "image": "items/Item_29.png",
       "description": ""
     },
     {
       "id": 30,
       "name": "Fruto slime",
-      "image": "items/item-30.png",
+      "image": "items/Item_30.png",
       "description": ""
     },
     {
       "id": 31,
       "name": "Seta bohriana",
-      "image": "items/item-31.png",
+      "image": "items/Item_31.png",
       "description": ""
     },
     {
       "id": 32,
       "name": "Rosa de Terbin",
-      "image": "items/item-32.png",
+      "image": "items/Item_32.png",
       "description": ""
     },
     {
       "id": 33,
       "name": "Zafiro",
-      "image": "items/item-33.png",
+      "image": "items/Item_33.png",
       "description": ""
     },
     {
       "id": 34,
       "name": "Rubí",
-      "image": "items/item-34.png",
+      "image": "items/Item_34.png",
       "description": ""
     },
     {
       "id": 35,
       "name": "Citrino",
-      "image": "items/item-35.png",
+      "image": "items/Item_35.png",
       "description": ""
     },
     {
       "id": 36,
       "name": "Circón",
-      "image": "items/item-36.png",
+      "image": "items/Item_36.png",
       "description": ""
     },
     {
       "id": 37,
       "name": "Sugilita",
-      "image": "items/item-37.png",
+      "image": "items/Item_37.png",
       "description": ""
     },
     {
       "id": 38,
       "name": "Esmeralda",
-      "image": "items/item-38.png",
+      "image": "items/Item_38.png",
       "description": ""
     },
     {
       "id": 39,
       "name": "Pelusa de murlusa",
-      "image": "items/item-39.png",
+      "image": "items/Item_39.png",
       "description": ""
     },
     {
       "id": 40,
       "name": "Cristalinita",
-      "image": "items/item-40.png",
+      "image": "items/Item_40.png",
       "description": ""
     },
     {
       "id": 41,
       "name": "Cronio",
-      "image": "items/item-41.png",
+      "image": "items/Item_41.png",
       "description": ""
     },
     {
       "id": 42,
       "name": "Oro",
-      "image": "items/item-42.png",
+      "image": "items/Item_42.png",
       "description": ""
     },
     {
       "id": 43,
       "name": "Mitrilo",
-      "image": "items/item-43.png",
+      "image": "items/Item_43.png",
       "description": ""
     },
     {
       "id": 44,
       "name": "Fluidirita",
-      "image": "items/item-44.png",
+      "image": "items/Item_44.png",
       "description": ""
     },
     {
       "id": 45,
       "name": "Oxigenio",
-      "image": "items/item-45.png",
+      "image": "items/Item_45.png",
       "description": ""
     },
     {
       "id": 46,
       "name": "Resonita",
-      "image": "items/item-46.png",
+      "image": "items/Item_46.png",
       "description": ""
     },
     {
       "id": 47,
       "name": "Luminita",
-      "image": "items/item-47.png",
+      "image": "items/Item_47.png",
       "description": ""
     },
     {
       "id": 48,
       "name": "Kassimerita",
-      "image": "items/item-48.png",
+      "image": "items/Item_48.png",
       "description": ""
     },
     {
       "id": 49,
       "name": "Magma Cristalizado",
-      "image": "items/item-49.png",
+      "image": "items/Item_49.png",
       "description": ""
     },
     {
       "id": 50,
       "name": "Bismuto",
-      "image": "items/item-50.png",
+      "image": "items/Item_50.png",
       "description": ""
     },
     {
       "id": 51,
       "name": "Vidrio solar",
-      "image": "items/item-51.png",
+      "image": "items/Item_51.png",
       "description": ""
     },
     {
       "id": 52,
       "name": "Singularita",
-      "image": "items/item-52.png",
+      "image": "items/Item_52.png",
       "description": ""
     },
     {
       "id": 53,
       "name": "Apalescita",
-      "image": "items/item-53.png",
+      "image": "items/Item_53.png",
       "description": ""
     },
     {
       "id": 54,
       "name": "Lumidotita",
-      "image": "items/item-54.png",
+      "image": "items/Item_54.png",
       "description": ""
     },
     {
       "id": 55,
       "name": "Celestio",
-      "image": "items/item-55.png",
+      "image": "items/Item_55.png",
       "description": ""
     },
     {
       "id": 56,
       "name": "Lengualga",
-      "image": "items/item-56.png",
+      "image": "items/Item_56.png",
       "description": ""
     },
     {
       "id": 57,
       "name": "Rogoluz",
-      "image": "items/item-57.png",
+      "image": "items/Item_57.png",
       "description": ""
     },
     {
       "id": 58,
       "name": "Pargo peludo",
-      "image": "items/item-58.png",
+      "image": "items/Item_58.png",
       "description": ""
     },
     {
       "id": 59,
       "name": "Pez pato",
-      "image": "items/item-59.png",
+      "image": "items/Item_59.png",
       "description": ""
     },
     {
       "id": 60,
       "name": "Medusa linterna",
-      "image": "items/item-60.png",
+      "image": "items/Item_60.png",
       "description": ""
     },
     {
       "id": 61,
       "name": "Clisea",
-      "image": "items/item-61.png",
+      "image": "items/Item_61.png",
       "description": ""
     },
     {
       "id": 62,
       "name": "Caracol de mar",
-      "image": "items/item-62.png",
+      "image": "items/Item_62.png",
       "description": ""
     },
     {
       "id": 63,
       "name": "Unibi",
-      "image": "items/item-63.png",
+      "image": "items/Item_63.png",
       "description": ""
     },
     {
       "id": 64,
       "name": "Tilipio",
-      "image": "items/item-64.png",
+      "image": "items/Item_64.png",
       "description": ""
     },
     {
       "id": 65,
       "name": "Trucha troyana",
-      "image": "items/item-65.png",
+      "image": "items/Item_65.png",
       "description": ""
     },
     {
       "id": 66,
       "name": "Carpín manguito",
-      "image": "items/item-66.png",
+      "image": "items/Item_66.png",
       "description": ""
     },
     {
       "id": 67,
       "name": "Caballito magmático",
-      "image": "items/item-67.png",
+      "image": "items/Item_67.png",
       "description": ""
     },
     {
       "id": 68,
       "name": "Sardina voladora",
-      "image": "items/item-68.png",
+      "image": "items/Item_68.png",
       "description": ""
     },
     {
       "id": 69,
       "name": "Tiburón caña",
-      "image": "items/item-69.png",
+      "image": "items/Item_69.png",
       "description": ""
     },
     {
       "id": 70,
       "name": "Pulpunk",
-      "image": "items/item-70.png",
+      "image": "items/Item_70.png",
       "description": ""
     },
     {
       "id": 71,
       "name": "Tiburón de obsidiana",
-      "image": "items/item-71.png",
+      "image": "items/Item_71.png",
       "description": ""
     },
     {
       "id": 72,
       "name": "Magmamar",
-      "image": "items/item-72.png",
+      "image": "items/Item_72.png",
       "description": ""
     },
     {
       "id": 73,
       "name": "Glaciablob",
-      "image": "items/item-73.png",
+      "image": "items/Item_73.png",
       "description": ""
     },
     {
       "id": 74,
       "name": "Geodautilo",
-      "image": "items/item-74.png",
+      "image": "items/Item_74.png",
       "description": ""
     },
     {
       "id": 75,
       "name": "Alguila",
-      "image": "items/item-75.png",
+      "image": "items/Item_75.png",
       "description": ""
     },
     {
       "id": 76,
       "name": "Pez aleta de gancho",
-      "image": "items/item-76.png",
+      "image": "items/Item_76.png",
       "description": ""
     },
     {
       "id": 77,
       "name": "Skupo",
-      "image": "items/item-77.png",
+      "image": "items/Item_77.png",
       "description": ""
     },
     {
       "id": 78,
       "name": "Cristarma",
-      "image": "items/item-78.png",
+      "image": "items/Item_78.png",
       "description": ""
     },
     {
       "id": 79,
       "name": "Butanco",
-      "image": "items/item-79.png",
+      "image": "items/Item_79.png",
       "description": ""
     },
     {
       "id": 80,
       "name": "Opabinia",
-      "image": "items/item-80.png",
+      "image": "items/Item_80.png",
       "description": ""
     },
     {
       "id": 81,
       "name": "Esturión erizo",
-      "image": "items/item-81.png",
+      "image": "items/Item_81.png",
       "description": ""
     },
     {
       "id": 82,
       "name": "Pez cola de fuego",
-      "image": "items/item-82.png",
+      "image": "items/Item_82.png",
       "description": ""
     },
     {
       "id": 83,
       "name": "Nemorquina",
-      "image": "items/item-83.png",
+      "image": "items/Item_83.png",
       "description": ""
     },
     {
       "id": 84,
       "name": "Escairón",
-      "image": "items/item-84.png",
+      "image": "items/Item_84.png",
       "description": ""
     },
     {
       "id": 85,
       "name": "Pez hada",
-      "image": "items/item-85.png",
+      "image": "items/Item_85.png",
       "description": ""
     },
     {
       "id": 86,
       "name": "Libélula nadadora",
-      "image": "items/item-86.png",
+      "image": "items/Item_86.png",
       "description": ""
     },
     {
       "id": 87,
       "name": "Luciérnaga borhiana",
-      "image": "items/item-87.png",
+      "image": "items/Item_87.png",
       "description": ""
     },
     {
       "id": 88,
       "name": "Nebuposa",
-      "image": "items/item-88.png",
+      "image": "items/Item_88.png",
       "description": ""
     },
     {
       "id": 89,
       "name": "Insecto ígneo",
-      "image": "items/item-89.png",
+      "image": "items/Item_89.png",
       "description": ""
     },
     {
       "id": 90,
       "name": "Cataña",
-      "image": "items/item-90.png",
+      "image": "items/Item_90.png",
       "description": ""
     },
     {
       "id": 91,
       "name": "Polilla de algodón",
-      "image": "items/item-91.png",
+      "image": "items/Item_91.png",
       "description": ""
     },
     {
       "id": 92,
       "name": "Mosquito hinchado",
-      "image": "items/item-92.png",
+      "image": "items/Item_92.png",
       "description": ""
     },
     {
       "id": 93,
       "name": "Tintinojo",
-      "image": "items/item-93.png",
+      "image": "items/Item_93.png",
       "description": ""
     },
     {
       "id": 94,
       "name": "Cigarra diamante",
-      "image": "items/item-94.png",
+      "image": "items/Item_94.png",
       "description": ""
     },
     {
       "id": 95,
       "name": "Ninfa azabache",
-      "image": "items/item-95.png",
+      "image": "items/Item_95.png",
       "description": ""
     },
     {
       "id": 96,
       "name": "Medusa voladora",
-      "image": "items/item-96.png",
+      "image": "items/Item_96.png",
       "description": ""
     },
     {
       "id": 97,
       "name": "Bulbo volador",
-      "image": "items/item-97.png",
+      "image": "items/Item_97.png",
       "description": ""
     },
     {
       "id": 98,
       "name": "Buchi burbuja",
-      "image": "items/item-98.png",
+      "image": "items/Item_98.png",
       "description": ""
     },
     {
       "id": 99,
       "name": "Fluffusk",
-      "image": "items/item-99.png",
+      "image": "items/Item_99.png",
       "description": ""
     },
     {
       "id": 100,
       "name": "Ragnato",
-      "image": "items/item-100.png",
+      "image": "items/Item_100.png",
       "description": ""
     },
     {
       "id": 101,
       "name": "Mosca de néctar",
-      "image": "items/item-101.png",
+      "image": "items/Item_101.png",
       "description": ""
     },
     {
       "id": 102,
       "name": "Araña colorida",
-      "image": "items/item-102.png",
+      "image": "items/Item_102.png",
       "description": ""
     },
     {
       "id": 103,
       "name": "Ciempiés taladro",
-      "image": "items/item-103.png",
+      "image": "items/Item_103.png",
       "description": ""
     },
     {
       "id": 104,
       "name": "Tricacio",
-      "image": "items/item-104.png",
+      "image": "items/Item_104.png",
       "description": ""
     },
     {
       "id": 105,
       "name": "Salta-lunas",
-      "image": "items/item-105.png",
+      "image": "items/Item_105.png",
       "description": ""
     },
     {
       "id": 106,
       "name": "Cubeliyo",
-      "image": "items/item-106.png",
+      "image": "items/Item_106.png",
       "description": ""
     },
     {
       "id": 107,
       "name": "Mariposa ángel",
-      "image": "items/item-107.png",
+      "image": "items/Item_107.png",
       "description": ""
     },
     {
       "id": 108,
       "name": "Bacteria",
-      "image": "items/item-108.png",
+      "image": "items/Item_108.png",
       "description": ""
     },
     {
       "id": 109,
       "name": "Fouldus",
-      "image": "items/item-109.png",
+      "image": "items/Item_109.png",
       "description": ""
     },
     {
       "id": 110,
       "name": "Slugra",
-      "image": "items/item-110.png",
+      "image": "items/Item_110.png",
       "description": ""
     },
     {
       "id": 111,
       "name": "Niroide",
-      "image": "items/item-111.png",
+      "image": "items/Item_111.png",
       "description": ""
     },
     {
       "id": 112,
       "name": "Vorgolia",
-      "image": "items/item-112.png",
+      "image": "items/Item_112.png",
       "description": ""
     },
     {
       "id": 113,
       "name": "Avispa vanadia",
-      "image": "items/item-113.png",
+      "image": "items/Item_113.png",
       "description": ""
     },
     {
       "id": 114,
       "name": "Mosca frondosa",
-      "image": "items/item-114.png",
+      "image": "items/Item_114.png",
       "description": ""
     },
     {
       "id": 115,
       "name": "Hexagóculo",
-      "image": "items/item-115.png",
+      "image": "items/Item_115.png",
       "description": ""
     },
     {
       "id": 116,
       "name": "Flor galeana",
-      "image": "items/item-116.png",
+      "image": "items/Item_116.png",
       "description": ""
     },
     {
       "id": 117,
       "name": "Madera galeana",
-      "image": "items/item-117.png",
+      "image": "items/Item_117.png",
       "description": ""
     },
     {
       "id": 118,
       "name": "Semilla de árbol galeano",
-      "image": "items/item-118.png",
+      "image": "items/Item_118.png",
       "description": ""
     },
     {
       "id": 119,
       "name": "Champiñón galeano",
-      "image": "items/item-119.png",
+      "image": "items/Item_119.png",
       "description": ""
     },
     {
       "id": 120,
       "name": "Seta galeana",
-      "image": "items/item-120.png",
+      "image": "items/Item_120.png",
       "description": ""
     },
     {
       "id": 121,
       "name": "Helecho",
-      "image": "items/item-121.png",
+      "image": "items/Item_121.png",
       "description": ""
     },
     {
       "id": 122,
       "name": "Cactus",
-      "image": "items/item-122.png",
+      "image": "items/Item_122.png",
       "description": ""
     },
     {
       "id": 123,
       "name": "Coco",
-      "image": "items/item-123.png",
+      "image": "items/Item_123.png",
       "description": ""
     },
     {
       "id": 124,
       "name": "Roca del desierto",
-      "image": "items/item-124.png",
+      "image": "items/Item_124.png",
       "description": ""
     },
     {
       "id": 125,
       "name": "Madera de palmera",
-      "image": "items/item-125.png",
+      "image": "items/Item_125.png",
       "description": ""
     },
     {
       "id": 126,
       "name": "Semilla de palmera",
-      "image": "items/item-126.png",
+      "image": "items/Item_126.png",
       "description": ""
     },
     {
       "id": 127,
       "name": "Célula de combustible",
-      "image": "items/item-127.png",
+      "image": "items/Item_127.png",
       "description": ""
     },
     {
       "id": 128,
       "name": "Mueble",
-      "image": "items/item-128.png",
+      "image": "items/Item_128.png",
       "description": ""
     },
     {
       "id": 129,
       "name": "Aspersor",
-      "image": "items/item-129.png",
+      "image": "items/Item_129.png",
       "description": ""
     },
     {
       "id": 130,
       "name": "Valla",
-      "image": "items/item-130.png",
+      "image": "items/Item_130.png",
       "description": ""
     },
     {
       "id": 131,
       "name": "Titanio",
-      "image": "items/item-131.png",
+      "image": "items/Item_131.png",
       "description": ""
     },
     {
       "id": 132,
       "name": "Célula triple",
-      "image": "items/item-132.png",
+      "image": "items/Item_132.png",
       "description": ""
     },
     {
       "id": 133,
       "name": "Tabla de piedra 1",
-      "image": "items/item-133.png",
+      "image": "items/Item_133.png",
       "description": ""
     },
     {
       "id": 134,
       "name": "Tabla de piedra 2",
-      "image": "items/item-134.png",
+      "image": "items/Item_134.png",
       "description": ""
     },
     {
       "id": 135,
       "name": "Tabla de piedra 1",
-      "image": "items/item-135.png",
+      "image": "items/Item_135.png",
       "description": ""
     },
     {
       "id": 136,
       "name": "Tabla de piedra 4",
-      "image": "items/item-136.png",
+      "image": "items/Item_136.png",
       "description": ""
     },
     {
       "id": 137,
       "name": "Tabla de piedra 5",
-      "image": "items/item-137.png",
+      "image": "items/Item_137.png",
       "description": ""
     },
     {
       "id": 138,
       "name": "Tinaja antigua",
-      "image": "items/item-138.png",
+      "image": "items/Item_138.png",
       "description": ""
     },
     {
       "id": 139,
       "name": "Estatua religiosa",
-      "image": "items/item-139.png",
+      "image": "items/Item_139.png",
       "description": ""
     },
     {
       "id": 140,
       "name": "Máscara de piedra",
-      "image": "items/item-140.png",
+      "image": "items/Item_140.png",
       "description": ""
     },
     {
       "id": 141,
       "name": "Hueso desconocido",
-      "image": "items/item-141.png",
+      "image": "items/Item_141.png",
       "description": ""
     },
     {
       "id": 142,
       "name": "Cráneo desconocido",
-      "image": "items/item-142.png",
+      "image": "items/Item_142.png",
       "description": ""
     },
     {
       "id": 143,
       "name": "Anillo oxidado",
-      "image": "items/item-143.png",
+      "image": "items/Item_143.png",
       "description": ""
     },
     {
       "id": 144,
       "name": "Cuchilla roma",
-      "image": "items/item-144.png",
+      "image": "items/Item_144.png",
       "description": ""
     },
     {
       "id": 145,
       "name": "Moneda antigua",
-      "image": "items/item-145.png",
+      "image": "items/Item_145.png",
       "description": ""
     },
     {
       "id": 146,
       "name": "Protector de la nada",
-      "image": "items/item-146.png",
+      "image": "items/Item_146.png",
       "description": ""
     },
     {
       "id": 147,
       "name": "Comunicador arcaico",
-      "image": "items/item-147.png",
+      "image": "items/Item_147.png",
       "description": ""
     },
     {
       "id": 148,
       "name": "Controlador del entretenimiento",
-      "image": "items/item-148.png",
+      "image": "items/Item_148.png",
       "description": ""
     },
     {
       "id": 149,
       "name": "Cabeza desenterrada",
-      "image": "items/item-149.png",
+      "image": "items/Item_149.png",
       "description": ""
     },
     {
       "id": 150,
       "name": "Estatua funeraria",
-      "image": "items/item-150.png",
+      "image": "items/Item_150.png",
       "description": ""
     },
     {
       "id": 151,
       "name": "Escudo viejo",
-      "image": "items/item-151.png",
+      "image": "items/Item_151.png",
       "description": ""
     },
     {
       "id": 152,
       "name": "Reproductor de melodías arcaicas",
-      "image": "items/item-152.png",
+      "image": "items/Item_152.png",
       "description": ""
     },
     {
       "id": 153,
       "name": "Mascota olvidada",
-      "image": "items/item-153.png",
+      "image": "items/Item_153.png",
       "description": ""
     },
     {
       "id": 154,
       "name": "Reto imposible",
-      "image": "items/item-154.png",
+      "image": "items/Item_154.png",
       "description": ""
     },
     {
       "id": 155,
       "name": "Acompañante de baño",
-      "image": "items/item-155.png",
+      "image": "items/Item_155.png",
       "description": ""
     },
     {
       "id": 156,
       "name": "Liberador de la ruina",
-      "image": "items/item-156.png",
+      "image": "items/Item_156.png",
       "description": ""
     },
     {
       "id": 157,
       "name": "Reductor de visión metalizado",
-      "image": "items/item-157.png",
+      "image": "items/Item_157.png",
       "description": ""
     },
     {
       "id": 158,
       "name": "Casco de la justicia",
-      "image": "items/item-158.png",
+      "image": "items/Item_158.png",
       "description": ""
     },
     {
       "id": 159,
       "name": "Palanca de la diversión",
-      "image": "items/item-159.png",
+      "image": "items/Item_159.png",
       "description": ""
     },
     {
       "id": 160,
       "name": "Orbe de fantasía",
-      "image": "items/item-160.png",
+      "image": "items/Item_160.png",
       "description": ""
     },
     {
       "id": 161,
       "name": "Monitor pesado",
-      "image": "items/item-161.png",
+      "image": "items/Item_161.png",
       "description": ""
     },
     {
       "id": 162,
       "name": "Instrumento para viajes temporales",
-      "image": "items/item-162.png",
+      "image": "items/Item_162.png",
       "description": ""
     },
     {
       "id": 163,
       "name": "Semillas de odox",
-      "image": "items/item-163.png",
+      "image": "items/Item_163.png",
       "description": ""
     },
     {
       "id": 164,
       "name": "Odox",
-      "image": "items/item-164.png",
+      "image": "items/Item_164.png",
       "description": ""
     },
     {
       "id": 165,
       "name": "Semillas de crisful",
-      "image": "items/item-165.png",
+      "image": "items/Item_165.png",
       "description": ""
     },
     {
       "id": 166,
       "name": "Crisful",
-      "image": "items/item-166.png",
+      "image": "items/Item_166.png",
       "description": ""
     },
     {
       "id": 167,
       "name": "Semillas de conduri",
-      "image": "items/item-167.png",
+      "image": "items/Item_167.png",
       "description": ""
     },
     {
       "id": 168,
       "name": "Conduri",
-      "image": "items/item-168.png",
+      "image": "items/Item_168.png",
       "description": ""
     },
     {
       "id": 169,
       "name": "Semillas de penrose",
-      "image": "items/item-169.png",
+      "image": "items/Item_169.png",
       "description": ""
     },
     {
       "id": 170,
       "name": "Penrose",
-      "image": "items/item-170.png",
+      "image": "items/Item_170.png",
       "description": ""
     },
     {
       "id": 171,
       "name": "Semillas de solaria",
-      "image": "items/item-171.png",
+      "image": "items/Item_171.png",
       "description": ""
     },
     {
       "id": 172,
       "name": "Solaria",
-      "image": "items/item-172.png",
+      "image": "items/Item_172.png",
       "description": ""
     },
     {
       "id": 173,
       "name": "Semillas de cuadrachofa",
-      "image": "items/item-173.png",
+      "image": "items/Item_173.png",
       "description": ""
     },
     {
       "id": 174,
       "name": "Cuadrachofa",
-      "image": "items/item-174.png",
+      "image": "items/Item_174.png",
       "description": ""
     },
     {
       "id": 175,
       "name": "Semillas de vulcitania",
-      "image": "items/item-175.png",
+      "image": "items/Item_175.png",
       "description": ""
     },
     {
       "id": 176,
       "name": "Brote de vulcitania",
-      "image": "items/item-176.png",
+      "image": "items/Item_176.png",
       "description": ""
     },
     {
       "id": 177,
       "name": "Semillas de galleta",
-      "image": "items/item-177.png",
+      "image": "items/Item_177.png",
       "description": ""
     },
     {
       "id": 178,
       "name": "Galleta",
-      "image": "items/item-178.png",
+      "image": "items/Item_178.png",
       "description": ""
     },
     {
       "id": 179,
       "name": "Semillas piramidales",
-      "image": "items/item-179.png",
+      "image": "items/Item_179.png",
       "description": ""
     },
     {
       "id": 180,
       "name": "Líquido piramidal",
-      "image": "items/item-180.png",
+      "image": "items/Item_180.png",
       "description": ""
     },
     {
       "id": 181,
       "name": "Semillas de blóbulo",
-      "image": "items/item-181.png",
+      "image": "items/Item_181.png",
       "description": ""
     },
     {
       "id": 182,
       "name": "Brote de blóbulo",
-      "image": "items/item-182.png",
+      "image": "items/Item_182.png",
       "description": ""
     },
     {
       "id": 183,
       "name": "Semillas de bólaro",
-      "image": "items/item-183.png",
+      "image": "items/Item_183.png",
       "description": ""
     },
     {
       "id": 184,
       "name": "Bólaro",
-      "image": "items/item-184.png",
+      "image": "items/Item_184.png",
       "description": ""
     },
     {
       "id": 185,
       "name": "Icosemillas",
-      "image": "items/item-185.png",
+      "image": "items/Item_185.png",
       "description": ""
     },
     {
       "id": 186,
       "name": "Icosandía",
-      "image": "items/item-186.png",
+      "image": "items/Item_186.png",
       "description": ""
     },
     {
       "id": 187,
       "name": "Semillas de rakkaus",
-      "image": "items/item-187.png",
+      "image": "items/Item_187.png",
       "description": ""
     },
     {
       "id": 188,
       "name": "Rakkau",
-      "image": "items/item-188.png",
+      "image": "items/Item_188.png",
       "description": ""
     },
     {
       "id": 189,
       "name": "Semillas de kuriq",
-      "image": "items/item-189.png",
+      "image": "items/Item_189.png",
       "description": ""
     },
     {
       "id": 190,
       "name": "Kuriq",
-      "image": "items/item-190.png",
+      "image": "items/Item_190.png",
       "description": ""
     },
     {
       "id": 191,
       "name": "Semillas de mollifruta",
-      "image": "items/item-191.png",
+      "image": "items/Item_191.png",
       "description": ""
     },
     {
       "id": 192,
       "name": "Mollifruta",
-      "image": "items/item-192.png",
+      "image": "items/Item_192.png",
       "description": ""
     },
     {
       "id": 193,
       "name": "Semillas de pelombio",
-      "image": "items/item-193.png",
+      "image": "items/Item_193.png",
       "description": ""
     },
     {
       "id": 194,
       "name": "Pelombio",
-      "image": "items/item-194.png",
+      "image": "items/Item_194.png",
       "description": ""
     },
     {
       "id": 195,
       "name": "Semilla de chinola",
-      "image": "items/item-195.png",
+      "image": "items/Item_195.png",
       "description": ""
     },
     {
       "id": 196,
       "name": "Chinola de cristal",
-      "image": "items/item-196.png",
+      "image": "items/Item_196.png",
       "description": ""
     },
     {
       "id": 197,
       "name": "Semillas de cucuí",
-      "image": "items/item-197.png",
+      "image": "items/Item_197.png",
       "description": ""
     },
     {
       "id": 198,
       "name": "Cucuí",
-      "image": "items/item-198.png",
+      "image": "items/Item_198.png",
       "description": ""
     },
     {
       "id": 199,
       "name": "Semillas de globolabaza",
-      "image": "items/item-199.png",
+      "image": "items/Item_199.png",
       "description": ""
     },
     {
       "id": 200,
       "name": "Globolabaza",
-      "image": "items/item-200.png",
+      "image": "items/Item_200.png",
       "description": ""
     },
     {
       "id": 201,
       "name": "Lata vieja",
-      "image": "items/item-201.png",
+      "image": "items/Item_201.png",
       "description": ""
     },
     {
       "id": 202,
       "name": "Bota empapada",
-      "image": "items/item-202.png",
+      "image": "items/Item_202.png",
       "description": ""
     },
     {
       "id": 203,
       "name": "Anillas de plástico",
-      "image": "items/item-203.png",
+      "image": "items/Item_203.png",
       "description": ""
     },
     {
       "id": 204,
       "name": "Saco de basura",
-      "image": "items/item-204.png",
+      "image": "items/Item_204.png",
       "description": ""
     },
     {
       "id": 205,
       "name": "Pneumático viejo",
-      "image": "items/item-205.png",
+      "image": "items/Item_205.png",
       "description": ""
     },
     {
       "id": 206,
       "name": "Vaso de plástico",
-      "image": "items/item-206.png",
+      "image": "items/Item_206.png",
       "description": ""
     },
     {
       "id": 207,
       "name": "Cactus terbinita",
-      "image": "items/item-207.png",
+      "image": "items/Item_207.png",
       "description": ""
     },
     {
       "id": 208,
       "name": "Hierba borhiana",
-      "image": "items/item-208.png",
+      "image": "items/Item_208.png",
       "description": ""
     },
     {
       "id": 209,
       "name": "Hierba galeana",
-      "image": "items/item-209.png",
+      "image": "items/Item_209.png",
       "description": ""
     },
     {
       "id": 210,
       "name": "Hierba terbinita",
-      "image": "items/item-210.png",
+      "image": "items/Item_210.png",
       "description": ""
     },
     {
       "id": 211,
       "name": "Hierba terbinita oscura",
-      "image": "items/item-211.png",
+      "image": "items/Item_211.png",
       "description": ""
     },
     {
       "id": 212,
       "name": "Valla galeana",
-      "image": "items/item-212.png",
+      "image": "items/Item_212.png",
       "description": ""
     },
     {
       "id": 213,
       "name": "Suelo de tablones",
-      "image": "items/item-213.png",
+      "image": "items/Item_213.png",
       "description": ""
     },
     {
       "id": 214,
       "name": "Suelo elegante de tablones",
-      "image": "items/item-214.png",
+      "image": "items/Item_214.png",
       "description": ""
     },
     {
       "id": 215,
       "name": "Valla terbinita",
-      "image": "items/item-215.png",
+      "image": "items/Item_215.png",
       "description": ""
     },
     {
       "id": 216,
       "name": "Barril",
-      "image": "items/item-216.png",
+      "image": "items/Item_216.png",
       "description": ""
     },
     {
       "id": 217,
       "name": "Caja",
-      "image": "items/item-217.png",
+      "image": "items/Item_217.png",
       "description": ""
     },
     {
       "id": 218,
       "name": "Barril galeano",
-      "image": "items/item-218.png",
+      "image": "items/Item_218.png",
       "description": ""
     },
     {
       "id": 219,
       "name": "Caja galeana",
-      "image": "items/item-219.png",
+      "image": "items/Item_219.png",
       "description": ""
     },
     {
       "id": 220,
       "name": "Biombo alto azul",
-      "image": "items/item-220.png",
+      "image": "items/Item_220.png",
       "description": ""
     },
     {
       "id": 221,
       "name": "Cartel madera azul",
-      "image": "items/item-221.png",
+      "image": "items/Item_221.png",
       "description": ""
     },
     {
       "id": 222,
       "name": "Maceta azul",
-      "image": "items/item-222.png",
+      "image": "items/Item_222.png",
       "description": ""
     },
     {
       "id": 223,
       "name": "Taburete azul",
-      "image": "items/item-223.png",
+      "image": "items/Item_223.png",
       "description": ""
     },
     {
       "id": 224,
       "name": "Troncos azules",
-      "image": "items/item-224.png",
+      "image": "items/Item_224.png",
       "description": ""
     },
     {
       "id": 225,
       "name": "Casita para pájaros azul",
-      "image": "items/item-225.png",
+      "image": "items/Item_225.png",
       "description": ""
     },
     {
       "id": 226,
       "name": "Piedra decorativa",
-      "image": "items/item-226.png",
+      "image": "items/Item_226.png",
       "description": ""
     },
     {
       "id": 227,
       "name": "Jarrón de piedra",
-      "image": "items/item-227.png",
+      "image": "items/Item_227.png",
       "description": ""
     },
     {
       "id": 228,
       "name": "Gnomo de piedra",
-      "image": "items/item-228.png",
+      "image": "items/Item_228.png",
       "description": ""
     },
     {
       "id": 229,
       "name": "Estatua de piedra",
-      "image": "items/item-229.png",
+      "image": "items/Item_229.png",
       "description": ""
     },
     {
       "id": 230,
       "name": "Pozo de piedra",
-      "image": "items/item-230.png",
+      "image": "items/Item_230.png",
       "description": ""
     },
     {
       "id": 231,
       "name": "Pilar de piedra",
-      "image": "items/item-231.png",
+      "image": "items/Item_231.png",
       "description": ""
     },
     {
       "id": 232,
       "name": "Banco de piedra",
-      "image": "items/item-232.png",
+      "image": "items/Item_232.png",
       "description": ""
     },
     {
       "id": 233,
       "name": "Valla de piedra",
-      "image": "items/item-233.png",
+      "image": "items/Item_233.png",
       "description": ""
     },
     {
       "id": 234,
       "name": "Suelo de gravilla",
-      "image": "items/item-234.png",
+      "image": "items/Item_234.png",
       "description": ""
     },
     {
       "id": 235,
       "name": "Suelo de piedras",
-      "image": "items/item-235.png",
+      "image": "items/Item_235.png",
       "description": ""
     },
     {
       "id": 236,
       "name": "Mochila pequeña",
-      "image": "items/item-236.png",
+      "image": "items/Item_236.png",
       "description": ""
     },
     {
       "id": 237,
       "name": "Mochila grande",
-      "image": "items/item-237.png",
+      "image": "items/Item_237.png",
       "description": ""
     },
     {
       "id": 238,
       "name": "Set madera azul (EXTERIOR)",
-      "image": "items/item-238.png",
+      "image": "items/Item_238.png",
       "description": ""
     },
     {
       "id": 239,
       "name": "Set piedra (EXTERIOR)",
-      "image": "items/item-239.png",
+      "image": "items/Item_239.png",
       "description": ""
     },
     {
       "id": 240,
       "name": "Hacha de celestio",
-      "image": "items/item-240.png",
+      "image": "items/Item_240.png",
       "description": ""
     },
     {
       "id": 241,
       "name": "Hacha de plata",
-      "image": "items/item-241.png",
+      "image": "items/Item_241.png",
       "description": ""
     },
     {
       "id": 242,
       "name": "Hacha de cronio",
-      "image": "items/item-242.png",
+      "image": "items/Item_242.png",
       "description": ""
     },
     {
       "id": 243,
       "name": "Hacha de mitrilo",
-      "image": "items/item-243.png",
+      "image": "items/Item_243.png",
       "description": ""
     },
     {
       "id": 244,
       "name": "Pico de celestio",
-      "image": "items/item-244.png",
+      "image": "items/Item_244.png",
       "description": ""
     },
     {
       "id": 245,
       "name": "Pico de plata",
-      "image": "items/item-245.png",
+      "image": "items/Item_245.png",
       "description": ""
     },
     {
       "id": 246,
       "name": "Pico de cronio",
-      "image": "items/item-246.png",
+      "image": "items/Item_246.png",
       "description": ""
     },
     {
       "id": 247,
       "name": "Pico de mitrilo",
-      "image": "items/item-247.png",
+      "image": "items/Item_247.png",
       "description": ""
     },
     {
       "id": 248,
       "name": "Azada de celestio",
-      "image": "items/item-248.png",
+      "image": "items/Item_248.png",
       "description": ""
     },
     {
       "id": 249,
       "name": "Azada de plata",
-      "image": "items/item-249.png",
+      "image": "items/Item_249.png",
       "description": ""
     },
     {
       "id": 250,
       "name": "Azada de cronio",
-      "image": "items/item-250.png",
+      "image": "items/Item_250.png",
       "description": ""
     },
     {
       "id": 251,
       "name": "Azada de mitrilo",
-      "image": "items/item-251.png",
+      "image": "items/Item_251.png",
       "description": ""
     },
     {
       "id": 252,
       "name": "Hoz de celestio",
-      "image": "items/item-252.png",
+      "image": "items/Item_252.png",
       "description": ""
     },
     {
       "id": 253,
       "name": "Hoz de plata",
-      "image": "items/item-253.png",
+      "image": "items/Item_253.png",
       "description": ""
     },
     {
       "id": 254,
       "name": "Hoz de cronio",
-      "image": "items/item-254.png",
+      "image": "items/Item_254.png",
       "description": ""
     },
     {
       "id": 255,
       "name": "Hoz de mitrilo",
-      "image": "items/item-255.png",
+      "image": "items/Item_255.png",
       "description": ""
     },
     {
       "id": 256,
       "name": "Regadera de celestio",
-      "image": "items/item-256.png",
+      "image": "items/Item_256.png",
       "description": ""
     },
     {
       "id": 257,
       "name": "Regadera de plata",
-      "image": "items/item-257.png",
+      "image": "items/Item_257.png",
       "description": ""
     },
     {
       "id": 258,
       "name": "Regadera de cronio",
-      "image": "items/item-258.png",
+      "image": "items/Item_258.png",
       "description": ""
     },
     {
       "id": 259,
       "name": "Regadera de mitrilo",
-      "image": "items/item-259.png",
+      "image": "items/Item_259.png",
       "description": ""
     },
     {
       "id": 260,
       "name": "Cofre pequeño",
-      "image": "items/item-260.png",
+      "image": "items/Item_260.png",
       "description": ""
     },
     {
       "id": 261,
       "name": "Aspersor mejorado",
-      "image": "items/item-261.png",
+      "image": "items/Item_261.png",
       "description": ""
     },
     {
       "id": 262,
       "name": "Aspersor de calidad",
-      "image": "items/item-262.png",
+      "image": "items/Item_262.png",
       "description": ""
     },
     {
       "id": 263,
       "name": "Teletransportador azul",
-      "image": "items/item-263.png",
+      "image": "items/Item_263.png",
       "description": ""
     },
     {
       "id": 264,
       "name": "Teletransportador naranja",
-      "image": "items/item-264.png",
+      "image": "items/Item_264.png",
       "description": ""
     },
     {
       "id": 265,
       "name": "Teletransportador rojo",
-      "image": "items/item-265.png",
+      "image": "items/Item_265.png",
       "description": ""
     },
     {
       "id": 266,
       "name": "Teletransportador amarillo",
-      "image": "items/item-266.png",
+      "image": "items/Item_266.png",
       "description": ""
     },
     {
       "id": 267,
       "name": "Teletransportador verde",
-      "image": "items/item-267.png",
+      "image": "items/Item_267.png",
       "description": ""
     },
     {
       "id": 268,
       "name": "Teletransportador morado",
-      "image": "items/item-268.png",
+      "image": "items/Item_268.png",
       "description": ""
     },
     {
       "id": 269,
       "name": "Hierba del desierto",
-      "image": "items/item-269.png",
+      "image": "items/Item_269.png",
       "description": ""
     },
     {
       "id": 270,
       "name": "Teletransportador",
-      "image": "items/item-270.png",
+      "image": "items/Item_270.png",
       "description": ""
     }
   ]
