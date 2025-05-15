@@ -1,0 +1,21 @@
+{
+  "name": "Editor de Guardado - Farlands",
+  "short_name": "Farlands - Editor de Guardado",
+  "icons": [
+    {
+      "src": "/assets/favicons/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/favicons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#5c6bc0",
+  "background_color": "#5c6bc0",
+  "display": "standalone"
+}
