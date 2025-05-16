@@ -1,3 +1,16 @@
+> [!CAUTION]
+> **Aviso importante: Bloqueos de LaLiga**  
+> El acceso a la web de [Farlands Editor](https://farlands-editor.susodiz.com) podría verse afectado por los **bloqueos** masivos de IP que LaLiga está solicitando a los proveedores de internet en España.  
+> 
+> Esto se debe a la **_Sentencia de 18 de diciembre de 2024, dictada por el Juzgado de lo Mercantil nº 6 de Barcelona del procedimiento ordinario (Materia mercantil art. 249.1.4)-1005/2024-H instado por la Liga Nacional de Fútbol Profesional y por Telefónica Audiovisual Digital, S.L.U._**
+> 
+> Si experimentas problemas de inaccesibilidad, te recomendamos intentar acceder mediante una **VPN**, usar **redes alternativas** o ejecutar el editor **localmente**.  
+>
+> Más información:  
+> - [LaLiga - Nota Informativa](https://www.laliga.com/noticias/nota-informativa-en-relacion-con-el-bloqueo-de-ips-durante-las-ultimas-jornadas-de-laliga-ea-sports-vinculadas-a-las-practicas-ilegales-de-cloudflare)
+> - [AS: LaLiga ordena bloqueos que afectan a webs y apps legítimas](https://as.com/meristation/betech/ni-steam-ni-x-twitter-laliga-ordena-bloqueos-que-afectan-aleatoriamente-a-webs-y-aplicaciones-n/)
+> - [hayahora.futbol - Monitor de bloqueos de LaLiga](https://hayahora.futbol)
+
 # Farlands Editor
 
 ![Logo de Farlands Editor](./assets/readme/farlands-banner.jpg)
