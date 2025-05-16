@@ -524,6 +524,50 @@ footer a {
     text-decoration: none;
 }
 
+/* Banner de bloqueo */
+
+.spain-block {
+    width: 200px;
+    height: 101px;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    box-sizing: border-box;
+    transition: all 0.1s ease;
+    z-index: 100;
+    overflow: visible;
+}
+
+.spain-block:hover {
+    outline: 2px solid white;
+    transform: rotate(3deg) scale(1.05);
+    top: 1.25rem;
+    right: 1.25rem;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.spain-block img {
+    max-width: 100%;
+    display: block;
+}
+
+.spain-block button {
+    border: 0;
+    background: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    padding: 1px 6px;
+    cursor: pointer;
+
+    &:hover {
+        color: black;
+    }
+}
+
 /* Animaciones */
 @keyframes slideIn {
     from {
