@@ -11,6 +11,9 @@
 > - [AS: LaLiga ordena bloqueos que afectan a webs y apps legítimas](https://as.com/meristation/betech/ni-steam-ni-x-twitter-laliga-ordena-bloqueos-que-afectan-aleatoriamente-a-webs-y-aplicaciones-n/)
 > - [hayahora.futbol - Monitor de bloqueos de LaLiga](https://hayahora.futbol)
 
+> [!WARNING]
+> - El desarrollo del editor es muy lento actualmente por falta de tiempo hasta que pueda dedicarle el tiempo que merece.
+
 # Farlands Editor
 
 ![Logo de Farlands Editor](./assets/readme/farlands-banner.jpg)
