@@ -1,3 +1,37 @@
 User-agent: *
-Disallow:
+Allow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: omligi
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Claude-web
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: EtaoSpider
+Disallow: /
+
 Sitemap: https://farlands-editor.susodiz.com/sitemap.xml
