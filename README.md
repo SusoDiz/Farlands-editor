@@ -83,5 +83,5 @@ Este proyecto está bajo la **GNU General Public License v3.0** - ver el archivo
 
 <div align="center">
   <p>Desarrollado con ❤️ para la comunidad de Farlands</p>
-  <a href="https://susodiz.com/">SusoDiz</a>
+  <a href="https://susodiz.com/">☄️SusoDiz™</a>
 </div>
