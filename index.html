@@ -79,47 +79,48 @@
                 <button class="tab-btn active" data-tab="general">General</button>
                 <button class="tab-btn" data-tab="inventory">Inventario</button>
                 <button class="tab-btn" data-tab="farm">Granja</button>
-                <button class="tab-btn" data-tab="skills">Habilidades</button>
                 <button class="tab-btn" data-tab="ship">Nave espacial</button>
             </div>
             
             <div class="tab-content">
                 <div class="tab-pane active" id="general">
-                    <div class="form-group">
-                        <label for="playerName">Nombre del jugador</label>
-                        <input type="text" id="playerName" placeholder="Nombre del jugador">
-                    </div>
-                    <div class="form-group">
-                        <label for="farmName">Nombre de la granja</label>
-                        <input type="text" id="farmName" placeholder="Nombre de la granja">
-                    </div>
-                    <div class="form-group">
-                        <label for="credits">Créditos</label>
-                        <input type="number" id="credits" min="0">
-                    </div>
-                    <div class="form-group">
-                        <label for="energy">Nivel de Energía</label>
-                        <input type="number" id="energy" min="1" max="10">
-                    </div>
-                    <div class="form-group">
-                        <label for="level">Nivel del jugador</label>
-                        <input type="number" id="level" min="1">
-                    </div>
-                    <div class="form-group">
-                        <label for="day">Día actual</label>
-                        <input type="number" id="day" min="1" max="30">
-                    </div>
-                    <div class="form-group">
-                        <label for="year">Año actual</label>
-                        <input type="number" id="year" min="1">
-                    </div>
-                    <div class="form-group">
-                        <label for="season">Clima</label>
-                        <select id="season">
-                            <option value="1">Clima Templado</option>
-                            <option value="2">Clima Cálido</option>
-                            <option value="3">Clima Frío</option>
-                        </select>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="playerName">Nombre del jugador</label>
+                            <input type="text" id="playerName" placeholder="Nombre del jugador">
+                        </div>
+                        <div class="form-group">
+                            <label for="farmName">Nombre de la granja</label>
+                            <input type="text" id="farmName" placeholder="Nombre de la granja">
+                        </div>
+                        <div class="form-group">
+                            <label for="credits">Créditos</label>
+                            <input type="number" id="credits" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="energy">Nivel de Energía</label>
+                            <input type="number" id="energy" min="1" max="10">
+                        </div>
+                        <div class="form-group">
+                            <label for="level">Nivel del jugador</label>
+                            <input type="number" id="level" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="day">Día actual</label>
+                            <input type="number" id="day" min="1" max="30">
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Año actual</label>
+                            <input type="number" id="year" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="season">Clima</label>
+                            <select id="season">
+                                <option value="1">Clima Templado</option>
+                                <option value="2">Clima Cálido</option>
+                                <option value="3">Clima Frío</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 
@@ -133,117 +134,103 @@
                 <div class="tab-pane" id="farm">
                     <!-- Esta sección te permitirá editar tu granja. (Próximamente...) -->
                     <h3>Granja</h3>
-                    <div class="form-group">
-                        <label for="currentHouseLevel">Nivel de la casa</label>
-                        <select id="currentHouseLevel">
-                            <option value="0">Nivel 0</option>
-                            <option value="1">Nivel 1</option>
-                            <option value="2">Nivel 2</option>
-                            <option value="3">Nivel 3</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div class="tab-pane" id="skills">
-                    <h3>Herramientas</h3>
-                    <div class="form-group">
-                        <label for="hatchetLevel">Nivel de hacha</label>
-                        <input type="number" id="hatchetLevel" min="0" max="5">
-                    </div>
-                    <div class="form-group">
-                        <label for="pickaxeLevel">Nivel de pico</label>
-                        <input type="number" id="pickaxeLevel" min="0" max="5">
-                    </div>
-                    <div class="form-group">
-                        <label for="sickleLevel">Nivel de hoz</label>
-                        <input type="number" id="sickleLevel" min="0" max="5">
-                    </div>
-                    <div class="form-group">
-                        <label for="hoeLevel">Nivel de azada</label>
-                        <input type="number" id="hoeLevel" min="0" max="5">
-                    </div>
-                    <div class="form-group">
-                        <label for="wateringCanLevel">Nivel de regadera</label>
-                        <input type="number" id="wateringCanLevel" min="0" max="5">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="currentHouseLevel">Nivel de la casa</label>
+                            <select id="currentHouseLevel">
+                                <option value="0">Nivel 0</option>
+                                <option value="1">Nivel 1</option>
+                                <option value="2">Nivel 2</option>
+                                <option value="3">Nivel 3</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="tab-pane" id="ship">
                     <h3>Nave espacial</h3>
-                    <div class="form-group">
-                        <label for="shipEnergy">Materiales procesados</label>
-                        <input type="number" id="shipEnergy" min="0" max="100">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="shipEnergy">Materiales procesados</label>
+                            <input type="number" id="shipEnergy" min="0" max="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="shipCells">Combustible total</label>
+                            <input type="number" id="shipCells" min="2" max="10">
+                        </div>
+                        <div class="form-group">
+                            <label for="shipActiveCells">Combustible actual</label>
+                            <input type="number" id="shipActiveCells" min="0" max="10">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="shipCells">Combustible total</label>
-                        <input type="number" id="shipCells" min="2" max="10">
-                    </div>
-                    <div class="form-group">
-                        <label for="shipActiveCells">Combustible actual</label>
-                        <input type="number" id="shipActiveCells" min="0" max="10">
-                    </div>
+
+                    <br />
                     
                     <h3>Mejoras de la nave</h3>
-                    <div class="form-group">
-                        <label for="ship-cells">Células de combustible</label>
-                        <select id="ship-cells">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="ship-engine">Motor</label>
-                        <select id="ship-engine">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="ship-cargo">Espacio de la bahía de carga</label>
-                        <select id="ship-cargo">
-                            <option value="0">0 (2 espacios)</option>
-                            <option value="1">1 (6 espacios)</option>
-                            <option value="2">2 (10 espacios)</option>
-                            <option value="3">3 (14 espacios)</option>
-                            <option value="4">4 (18 espacios)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="ship-reactors">Reactores</label>
-                        <select id="ship-reactors">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="ship-processor">Procesador de materia</label>
-                        <select id="ship-processor">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="ship-hull">Refuerzo del casco</label>
-                        <select id="ship-hull">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                        </select>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="ship-cells">Células de combustible</label>
+                            <select id="ship-cells">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ship-engine">Motor</label>
+                            <select id="ship-engine">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ship-cargo">Espacio de la bahía de carga</label>
+                            <select id="ship-cargo">
+                                <option value="0">0 (2 espacios)</option>
+                                <option value="1">1 (6 espacios)</option>
+                                <option value="2">2 (10 espacios)</option>
+                                <option value="3">3 (14 espacios)</option>
+                                <option value="4">4 (18 espacios)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ship-reactors">Reactores</label>
+                            <select id="ship-reactors">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ship-processor">Procesador de materia</label>
+                            <select id="ship-processor">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ship-hull">Refuerzo del casco</label>
+                            <select id="ship-hull">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
                     </div>
                     <div id="ship-parts" style="display: none;">
                         <!-- Las partes de la nave se cargarán dinámicamente aquí -->
                     </div>
+
+                    <br />
                     
                     <h3>Inventario de la Nave</h3>
                     <p>Los espacios disponibles dependen del nivel de mejora de la bahía de carga.</p>
@@ -251,6 +238,8 @@
                         <!-- El inventario de la nave se generará dinámicamente aquí -->
                     </div>
                 </div>
+
+
             </div>
             
             <div class="action-buttons">

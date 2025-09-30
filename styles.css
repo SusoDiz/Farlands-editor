@@ -1,3 +1,37 @@
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
 /* Estilos generales */
 :root {
     /* Colores modo claro (default) */
@@ -17,6 +51,10 @@
     --danger-color: #f44336;
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     --link: #51c8ff;
+    
+    /* Tiempos de animación */
+    --animation-speed: 0.3s;
+    --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Modo oscuro */
@@ -49,6 +87,36 @@ body {
     padding: 20px;
 }
 
+/* Grid para formularios */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    animation: fadeIn 0.6s var(--animation-function);
+}
+
+/* Ajustes específicos para los form-groups en el grid */
+.form-grid .form-group {
+    margin-bottom: 0;
+}
+
+/* Mantener inventario en una columna */
+#inventory .form-group {
+    display: block;
+    grid-column: 1 / -1;
+}
+
+/* Los grupos de formulario que necesiten ocupar todo el ancho */
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Ajustes para inputs y selects */
+.form-group input,
+.form-group select {
+    width: 100%;
+}
+
 /* Botón de cambio de tema */
 .theme-toggle {
     position: absolute;
@@ -71,7 +139,7 @@ body {
 }
 
 .theme-toggle:hover {
-    transform: rotate(30deg);
+    transform: rotate(180deg);
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -172,10 +240,11 @@ section h2 {
     width: calc(33.33% - 20px);
     min-width: 250px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all var(--animation-speed) var(--animation-function);
     background-color: var(--card-bg);
     box-shadow: var(--shadow);
     flex: 1;
+    animation: scaleIn 0.4s var(--animation-function);
 }
 
 .slot-card:hover {
@@ -272,6 +341,7 @@ section h2 {
 
 .tab-pane.active {
     display: block;
+    animation: fadeIn 0.4s var(--animation-function);
 }
 
 /* Formularios */
@@ -427,19 +497,35 @@ button {
 .primary-btn {
     background-color: var(--primary-color);
     color: white;
+    transition: all var(--animation-speed) var(--animation-function);
+    transform: translateY(0);
 }
 
 .primary-btn:hover {
     background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.primary-btn:active {
+    transform: translateY(0);
 }
 
 .secondary-btn {
     background-color: var(--secondary-color);
     color: white;
+    transition: all var(--animation-speed) var(--animation-function);
+    transform: translateY(0);
 }
 
 .secondary-btn:hover {
     background-color: var(--secondary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-btn:active {
+    transform: translateY(0);
 }
 
 /* Botón de reinicio */

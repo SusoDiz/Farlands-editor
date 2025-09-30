@@ -689,13 +689,6 @@ document.addEventListener('DOMContentLoaded', function () {
             option.selected = (option.value === seasonValue.toString());
         }
 
-        // Cargar datos de habilidades
-        document.getElementById('hatchetLevel').value = slotData.hatchetLevel || 0;
-        document.getElementById('pickaxeLevel').value = slotData.pickaxeLevel || 0;
-        document.getElementById('sickleLevel').value = slotData.sickleLevel || 0;
-        document.getElementById('hoeLevel').value = slotData.hoeLevel || 0;
-        document.getElementById('wateringCanLevel').value = slotData.wateringCanLevel || 0;
-
         // Cargar nivel de la casa (convertir de 1-4 a 0-3)
         const houseSelect = document.getElementById('currentHouseLevel');
         const houseLevel = slotData.currentHouseLevel ? (slotData.currentHouseLevel - 1) : 0;
@@ -1035,13 +1028,6 @@ document.addEventListener('DOMContentLoaded', function () {
             // Capturar el valor seleccionado del clima/estación
             const seasonSelect = document.getElementById('season');
             slotData.currentSeason = parseInt(seasonSelect.value);
-
-            // Actualizar habilidades
-            slotData.hatchetLevel = parseInt(document.getElementById('hatchetLevel').value) || 0;
-            slotData.pickaxeLevel = parseInt(document.getElementById('pickaxeLevel').value) || 0;
-            slotData.sickleLevel = parseInt(document.getElementById('sickleLevel').value) || 0;
-            slotData.hoeLevel = parseInt(document.getElementById('hoeLevel').value) || 0;
-            slotData.wateringCanLevel = parseInt(document.getElementById('wateringCanLevel').value) || 0;
 
             // Guardar nivel de la casa
             slotData.currentHouseLevel = parseInt(document.getElementById('currentHouseLevel').value) + 1 || 1;
